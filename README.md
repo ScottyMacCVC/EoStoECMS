@@ -23,7 +23,7 @@ Grand Project to encompass and map all steps within CVC's construction process
 - Staging.CVC_LegalData
 - Staging.CVC_JobSpecData
 - Staging.CVC_JobCostData
-### ![CVC_ERD](https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/CVC%20ERD%20for%20Estimating%20Universe4.png)
+### ![CVC_ERD](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-CVC%20ERD%20for%20Estimating%20Universe4.png)
 ERD INFO for quickDBD
 CVC_ContractInformationData
 -
