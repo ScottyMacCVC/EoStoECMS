@@ -3,7 +3,14 @@ Grand Project to encompass and map all steps within CVC's construction process
 
 ## Current Challenges
 
--We need to build one START using company 98 from EoS and then Mani can test the staging table import 
+### We need to go through the entry of the START from EoS. 
+- Is the process fluid? 
+- What data can we currently import? 
+- What data do we need to add? 
+- What are the steps? 
+- Who is involved? 
+
+### We need to build one START using company 98 from EoS and then Mani can test the staging table import 
 
 ![Mani Email](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Mani%20Email.png)
 
