@@ -6,7 +6,6 @@ Grand Project to encompass and map all steps within CVC's construction process
 ### We need to go through the entry of the START from EoS. 
 - What are the steps? 
 - Who is involved? 
-
 - Is the process fluid? 
 - What data can we currently import? 
 - What data do we need to add? 
@@ -19,17 +18,22 @@ Grand Project to encompass and map all steps within CVC's construction process
 
 ![Staging Tables-Contract Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Contract%20Information.png)
 
+## Overviews of CVC and Processes
 
+### The Enterprise View
 ![Enterprise View of CVC](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Enterprise%20View%20of%20CVC.png)
 
+### START Process Mapping
 ![START Process](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-START%20Process.png)
 
+### Generalized Cycle of Construction
 ![Generalized Cycle](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Generalized%20Cycle.png)
 
+### Basic Controlling Unit for SAP Based Products
 ![Basic Controlling Unit](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Basic%20Controlling%20Unit.png)
 
 
-## Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
+## SQL Table Information -  Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 - Database: Navigator
 ### Tables: 
 - Staging.CVC ContractInformationData
