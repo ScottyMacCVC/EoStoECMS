@@ -23,6 +23,10 @@ Grand Project to encompass and map all steps within CVC's construction process
 - Where does the step need to occur?
 - Why is this step important?
 
+![TrueSight Example](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-TrueSight%20Example.png)
+
+![TrueSight Query](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-TrueSight%20Query.png)
+
 ## Overviews of CVC and Processes
 
 ### The Enterprise View
