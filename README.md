@@ -72,11 +72,52 @@ CVC_ContractInformationData
 -
 JobNo Varchar pk fk - CVC_START.JobNo
 SubJobNo Varchar pk fk - CVC_START.SubJobNo
+CVC_ContractInformation_PK
+Estimate_PK
+CompanyID 
+DivisionID
+BuilderID
+ProjectName
+CustomerID
 Contract varchar FK >- CVC_Contracts.ContractNo
+ItemNumber
+Plan
+Address
+EffectiveDate
+ContractAmount
+Quantity
+Unit
+UnitPrice
+JCDistributionSubJob
+JCDistribution
+JCDistributionCostType
+JCDistributionRecordType
+FixedContract
+IncludeInMarkup
+TaxCode1
+TaxCode2
+TaxCode3
+PublishBy
+PublishDate
 
 CVC_JobInfoData
 -
+PK
+Estimate_PK
+CompanyID 
+DivisionID
+BuilderID
 JobNo Varchar pk FK >- CVC_START.JobNo
+SubJobNo
+CostCode
+CostType
+Quantity
+QuantityBare
+Unit
+Hours
+Amount
+PublishBy
+PublishDate
 
 CVC_LegalData
 -
@@ -109,41 +150,42 @@ SubJobNo Varchar pk FK >- CVC_START.SubJobNo
 
 CVC_START
 ----
-JobNo Varchar pk FK - CVC_JobCostData.JobNo
-SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
+JobNo Varchar pk FK -< CVC_JobCostData.JobNo
+SubJobNo Varchar pk FK >- CVC_JobInfoData.SubJobNo
 Lot Varchar pk FK - CVC_JobCostData.SubJobNo
-Estimate_PK
-CompanyID 
-DivisionID
-BuilderID
-ProjectName
-CustomerID
-Contract
-ItemNumber
-Plan
-Address
-EffectiveDate
-ContractAmount
-Quantity
-Unit
-UnitPrice
-JCDistributionSubJob
-JCDistribution
-JCDistributionCostType
-JCDistributionRecordType
-FixedContract
-IncludeInMarkup
-TaxCode1
-TaxCode2
-TaxCode3
-PublishBy
-PublishDate
-CostCode
-CostType
-QuantityBare
-Hours
-Amount
-PK
+CVC_ContractInformation_PK FK >- CVC_ContractInformationData.CVC_ContractInformation_PK
+Estimate_PK FK >- CVC_JobInfoData.Estimate_PK
+CompanyID FK >- CVC_JobInfoData.CompanyID
+DivisionID FK >- CVC_JobInfoData.DivisionID
+BuilderID FK >- CVC_JobInfoData.BuilderID
+ProjectName FK >- CVC_ContractInformationData.ProjectName
+CustomerID FK >- CVC_ContractInformationData.CustomerID
+Contract FK >- CVC_ContractInformationData.Contract
+ItemNumber FK >- CVC_ContractInformationData.ItemNumber
+Plan FK >- CVC_ContractInformationData.Plan
+Address FK >- CVC_ContractInformationData.Address
+EffectiveDate FK >- CVC_ContractInformationData.EffectiveDate
+ContractAmount FK >- CVC_ContractInformationData.ContractAmount
+Quantity FK >- CVC_JobInfoData.Quantity
+Unit FK >- CVC_JobInfoData.Unit
+UnitPrice FK >- CVC_ContractInformationData.UnitPrice
+JCDistributionSubJob FK >- CVC_ContractInformationData.JCDistributionSubJob
+JCDistribution FK >- CVC_ContractInformationData.JCDistribution
+JCDistributionCostType FK >- CVC_ContractInformationData.JCDistributionCostType
+JCDistributionRecordType FK >- CVC_ContractInformationData.JCDistributionRecordType
+FixedContract FK >- CVC_ContractInformationData.FixedContract
+IncludeInMarkup FK >- CVC_ContractInformationData.IncludeInMarkup
+TaxCode1 FK >- CVC_ContractInformationData.TaxCode1
+TaxCode2 FK >- CVC_ContractInformationData.TaxCode2
+TaxCode3 FK >- CVC_ContractInformationData.TaxCode3
+PublishBy FK >- CVC_JobInfoData.PublishBy
+PublishDate FK >- CVC_JobInfoData.PublishDate
+CostCode FK >- CVC_JobInfoData.CostCode
+CostType FK >- CVC_JobInfoData.CostType
+QuantityBare FK >- CVC_JobInfoData.QuantityBare
+Hours FK >- CVC_JobInfoData.Hours
+Amount FK >- CVC_JobInfoData.Amount
+PK FK >- CVC_JobInfoData.PK
 FoundationSlabEdge
 FoundationFootingSize
 FoundationFootingRebar
