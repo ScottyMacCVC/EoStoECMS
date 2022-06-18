@@ -10,13 +10,18 @@ Grand Project to encompass and map all steps within CVC's construction process
 - What data can we currently import? 
 - What data do we need to add? 
 
-### We need to build one START using company 98 from EoS and then Mani can test the staging table import 
+### We need to build one START using company 98 from EoS and then Mani can test the staging table import.
 
 ![Mani Email](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Mani%20Email.png)
 
 ![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
 
 ![Staging Tables-Contract Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Contract%20Information.png)
+
+### We want to build TrueSight into our STARTs process. 
+- What is TrueSight? 
+- Where does the step need to occur?
+- Why is this step important?
 
 ## Overviews of CVC and Processes
 
