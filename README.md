@@ -68,15 +68,16 @@ Grand Project to encompass and map all steps within CVC's construction process
 ### ![CVC_ERD](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-ERD.png)
 ERD INFO for quickDBD
 
+```
 CVC_ContractInformationData
 -
 JobNo Varchar pk fk - CVC_START.JobNo
 SubJobNo Varchar pk fk - CVC_START.SubJobNo
 CVC_ContractInformation_PK
-Estimate_PK
-CompanyID 
-DivisionID
-BuilderID
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
 ProjectName
 CustomerID
 Contract varchar FK >- CVC_Contracts.ContractNo
@@ -85,8 +86,8 @@ Plan
 Address
 EffectiveDate
 ContractAmount
-Quantity
-Unit
+Quantity FK >- CVC_START.Quantity
+Unit FK >- CVC_START.Unit
 UnitPrice
 JCDistributionSubJob
 JCDistribution
@@ -100,24 +101,65 @@ TaxCode3
 PublishBy
 PublishDate
 
-CVC_JobInfoData
+CVC_JobCostData
 -
-PK
-Estimate_PK
-CompanyID 
-DivisionID
-BuilderID
+PK FK >- CVC_START.PK
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
 JobNo Varchar pk FK >- CVC_START.JobNo
 SubJobNo
-CostCode
-CostType
-Quantity
-QuantityBare
-Unit
-Hours
-Amount
-PublishBy
-PublishDate
+CostCode FK >- CVC_START.CostCode
+CostType FK >- CVC_START.CostType
+Quantity FK >- CVC_START.Quantity
+QuantityBare FK >- CVC_START.QuantityBare
+Unit FK >- CVC_START.Unit
+Hours FK >- CVC_START.Hours
+Amount FK >- CVC_START.Amount
+PublishBy FK >- CVC_START.PublishBy
+PublishDate FK >- CVC_START.PublishDate
+
+CVC_JobInfoData
+-
+PK FK >- CVC_START.PK
+FoundationSlabEdge FK >- CVC_START.FoundationSlabEdge
+FoundationFootingSize FK >- CVC_START.FoundationFootingSize
+FoundationFootingRebar FK >- CVC_START.FoundationFootingRebar
+FoundationFootingDowel FK >- CVC_START.FoundationFootingDowel
+FoundationFootingWC FK >- CVC_START.FoundationFootingWC
+FoundationFootingPSI FK >- CVC_START.FoundationFootingPSI
+FoundationSlabThickness FK >- CVC_START.FoundationSlabThickness
+FoundationSlabReinforcement FK >- CVC_START.FoundationSlabReinforcement
+FoundationRocksandThickness FK >- CVC_START.FoundationRocksandThickness
+FoundationUpperBaseThickness FK >- CVC_START.FoundationUpperBaseThickness
+FoundationUpperBaseType FK >- CVC_START.FoundationUpperBaseType
+FoundationLowerBaseThickness FK >- CVC_START.FoundationLowerBaseThickness
+FoundationLowerBaseType FK >- CVC_START.FoundationLowerBaseType
+FoundationVapoRetarder FK >- CVC_START.FoundationVapoRetarder
+FoundationWCRatio FK >- CVC_START.FoundationWCRatio
+FoundationPSI FK >- CVC_START.FoundationPSI
+FoundationContractName FK >- CVC_START.FoundationContractName
+FoundationContractDate FK >- CVC_START.FoundationContractDate
+FoundationContractPricingPending FK >- CVC_START.FoundationContractPricingPending
+FoundationContractSOWPending FK >- CVC_START.FoundationContractSOWPending
+FoundationContractInsurancePending FK >- CVC_START.FoundationContractInsurancePending
+FoundationContractNotesPending FK >- CVC_START.FoundationContractNotesPending
+FoundationProposal FK >- CVC_START.FoundationProposal
+FoundationBudget FK >- CVC_START.FoundationBudget
+FoundationLatestPlanLink FK >- CVC_START.FoundationLatestPlanLink
+FoundationTaxRate FK >- CVC_START.FoundationTaxRate
+FoundationEquipment FK >- CVC_START.FoundationEquipment
+FoundationGLInsurance FK >- CVC_START.FoundationGLInsurance
+FoundationBudgetMargin FK >- CVC_START.FoundationBudgetMargin
+FoundationOverallLotCount FK >- CVC_START.FoundationOverallLotCount
+FoundationOutOfLevel FK >- CVC_START.FoundationOutOfLevel
+FoundationDeepenedFooting FK >- CVC_START.FoundationDeepenedFooting
+FoundationWalls FK >- CVC_START.FoundationWalls
+FoundationCurrentConcreteQuote FK >- CVC_START.FoundationCurrentConcreteQuote
+FoundationConcreteQuoteDate FK >- CVC_START.FoundationConcreteQuoteDate
+FoundationConreteIncreaseDate FK >- CVC_START.FoundationConreteIncreaseDate
+FoundationMixDesignNo FK >- CVC_START.FoundationMixDesignNo
 
 CVC_LegalData
 -
@@ -127,11 +169,6 @@ CVC_JobSpecData
 -
 JobNo Varchar pk fk - CVC_START.JobNo
 SubJobNo Varchar pk fk - CVC_START.SubJobNo
-
-CVC_JobCostData
--
-JobNo Varchar
-SubJobNo Varchar pk
 
 CVC_Contracts
 ----
@@ -150,14 +187,14 @@ SubJobNo Varchar pk FK >- CVC_START.SubJobNo
 
 CVC_START
 ----
-JobNo Varchar pk FK -< CVC_JobCostData.JobNo
-SubJobNo Varchar pk FK >- CVC_JobInfoData.SubJobNo
+JobNo
+SubJobNo
 Lot Varchar pk FK - CVC_JobCostData.SubJobNo
 CVC_ContractInformation_PK FK >- CVC_ContractInformationData.CVC_ContractInformation_PK
-Estimate_PK FK >- CVC_JobInfoData.Estimate_PK
-CompanyID FK >- CVC_JobInfoData.CompanyID
-DivisionID FK >- CVC_JobInfoData.DivisionID
-BuilderID FK >- CVC_JobInfoData.BuilderID
+Estimate_PK FK
+CompanyID
+DivisionID
+BuilderID
 ProjectName FK >- CVC_ContractInformationData.ProjectName
 CustomerID FK >- CVC_ContractInformationData.CustomerID
 Contract FK >- CVC_ContractInformationData.Contract
@@ -166,8 +203,8 @@ Plan FK >- CVC_ContractInformationData.Plan
 Address FK >- CVC_ContractInformationData.Address
 EffectiveDate FK >- CVC_ContractInformationData.EffectiveDate
 ContractAmount FK >- CVC_ContractInformationData.ContractAmount
-Quantity FK >- CVC_JobInfoData.Quantity
-Unit FK >- CVC_JobInfoData.Unit
+Quantity
+Unit
 UnitPrice FK >- CVC_ContractInformationData.UnitPrice
 JCDistributionSubJob FK >- CVC_ContractInformationData.JCDistributionSubJob
 JCDistribution FK >- CVC_ContractInformationData.JCDistribution
@@ -178,14 +215,14 @@ IncludeInMarkup FK >- CVC_ContractInformationData.IncludeInMarkup
 TaxCode1 FK >- CVC_ContractInformationData.TaxCode1
 TaxCode2 FK >- CVC_ContractInformationData.TaxCode2
 TaxCode3 FK >- CVC_ContractInformationData.TaxCode3
-PublishBy FK >- CVC_JobInfoData.PublishBy
-PublishDate FK >- CVC_JobInfoData.PublishDate
-CostCode FK >- CVC_JobInfoData.CostCode
-CostType FK >- CVC_JobInfoData.CostType
-QuantityBare FK >- CVC_JobInfoData.QuantityBare
-Hours FK >- CVC_JobInfoData.Hours
-Amount FK >- CVC_JobInfoData.Amount
-PK FK >- CVC_JobInfoData.PK
+PublishBy
+PublishDate
+CostCode
+CostType
+QuantityBare
+Hours
+Amount
+PK
 FoundationSlabEdge
 FoundationFootingSize
 FoundationFootingRebar
@@ -396,5 +433,9 @@ Supervisor
 PO_No
 Warehouse_No
 Staging_Location
+
+```
+
+
 
 
