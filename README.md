@@ -109,3 +109,36 @@ CVC_START
 ----
 JobNo Varchar pk FK - CVC_JobCostData.JobNo
 SubJobNo Varchar pk FK - CVC_JobCostData.SubJobNo
+Lot Varchar pk FK - CVC_JobCostData.SubJobNo
+Estimate_PK
+CompanyID 
+DivisionID
+BuilderID
+ProjectName
+CustomerID
+Contract FK >- CVC_AR.Contract
+ItemNumber
+Plan
+Address
+EffectiveDate
+ContractAmount
+Quantity
+Unit
+UnitPrice
+JCDistributionSubJob
+JCDistribution
+JCDistributionCostType
+JCDistributionRecordType
+FixedContract
+IncludeInMarkup
+TaxCode1
+TaxCode2
+TaxCode3
+PublishBy
+PublishDate
+
+
+CVC_AR
+----
+Lot Varchar pk FK - CVC_START.Lot
+Contract
