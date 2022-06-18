@@ -10,6 +10,11 @@ Grand Project to encompass and map all steps within CVC's construction process
 - What data can we currently import? 
 - What data do we need to add? 
 
+### EoS to START Process
+-Step 1 is UDFs Workflow
+-Step 2 is Contract Import Form
+-Step 3 is START Import Form
+
 ### We need to build one START using company 98 from EoS and then Mani can test the staging table import.
 
 ![Mani Email](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Mani%20Email.png)
