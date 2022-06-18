@@ -109,7 +109,7 @@ CompanyID FK >- CVC_START.CompanyID
 DivisionID FK >- CVC_START.DivisionID
 BuilderID FK >- CVC_START.BuilderID
 JobNo Varchar pk FK >- CVC_START.JobNo
-SubJobNo
+SubJobNo FK >- CVC_START.SubJobNo
 CostCode FK >- CVC_START.CostCode
 CostType FK >- CVC_START.CostType
 Quantity FK >- CVC_START.Quantity
@@ -160,36 +160,225 @@ FoundationCurrentConcreteQuote FK >- CVC_START.FoundationCurrentConcreteQuote
 FoundationConcreteQuoteDate FK >- CVC_START.FoundationConcreteQuoteDate
 FoundationConreteIncreaseDate FK >- CVC_START.FoundationConreteIncreaseDate
 FoundationMixDesignNo FK >- CVC_START.FoundationMixDesignNo
+FlatworkMixDesignNo FK >- CVC_START.FlatworkMixDesignNo
+PublishBy FK >- CVC_START.PublishBy
+PublishDate FK >- CVC_START.PublishDate
 
 CVC_LegalData
 -
-JobNo Varchar pk FK >- CVC_Contracts.JobNo
+JobNo FK >- CVC_START.JobNo
+PK FK >- CVC_START.PK
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
+Owner FK >- CVC_START.Owner
+Contractor FK >- CVC_START.Contractor
+Subcontractor FK >- CVC_START.Subcontractor
+ContractDate FK >- CVC_START.ContractDate
+Version FK >- CVC_START.Version
+Lender FK >- CVC_START.Lender
+ContractType FK >- CVC_START.ContractType
+LiquidatedDamages FK >- CVC_START.LiquidatedDamages
+TerminationTerms FK >- CVC_START.TerminationTerms
+TerminationPay FK >- CVC_START.TerminationPay
+WarrantyPeriod FK >- CVC_START.WarrantyPeriod
+NoticeDays FK >- CVC_START.NoticeDays
+PermittedDelays FK >- CVC_START.PermittedDelays
+StartDate FK >- CVC_START.StartDate
+BondAmount FK >- CVC_START.BondAmount
+BondRequired FK >- CVC_START.BondRequired
+DateReceived FK >- CVC_START.DateReceived
+BondAgentNotified FK >- CVC_START.BondAgentNotified
+LegalReviewDate FK >- CVC_START.LegalReviewDate
+ScopeReviewDate FK >- CVC_START.ScopeReviewDate
+CommentsSentDate FK >- CVC_START.CommentsSentDate
+CommentsResponseDate FK >- CVC_START.CommentsResponseDate
+ContractExecutedDate FK >- CVC_START.ContractExecutedDate
+ContractStatus FK >- CVC_START.ContractStatus
+InsuranceStatus FK >- CVC_START.InsuranceStatus
+OpsContactPerson FK >- CVC_START.OpsContactPerson
+APContactPerson FK >- CVC_START.APContactPerson
+ContactNumber FK >- CVC_START.ContactNumber
+ContactAddress FK >- CVC_START.ContactAddress
+CGLPolicy FK >- CVC_START.CGLPolicy
+WCPolicy FK >- CVC_START.WCPolicy
+AutoPolicy FK >- CVC_START.AutoPolicy
+ExcessPolicy FK >- CVC_START.ExcessPolicy
+GLOccupancyLimit FK >- CVC_START.GLOccupancyLimit
+GLAggregateLimit FK >- CVC_START.GLAggregateLimit
+GLCompOpLimit FK >- CVC_START.GLCompOpLimit
+GLPollution FK >- CVC_START.GLPollution
+CompletedOpsReq FK >- CVC_START.CompletedOpsReq
+GLPersInjuryLimit FK >- CVC_START.GLPersInjuryLimit
+GLOccuranceClaim FK >- CVC_START.GLOccuranceClaim
+GLLimit FK >- CVC_START.GLLimit
+WCBodilyInjuryLimit FK >- CVC_START.WCBodilyInjuryLimit
+WCDiseaseLimit FK >- CVC_START.WCDiseaseLimit
+WCAggregateLimit FK >- CVC_START.WCAggregateLimit
+WCWaiverofSubrogration FK >- CVC_START.WCWaiverofSubrogration
+ALOccuranceLimit FK >- CVC_START.ALOccuranceLimit
+ALAggregateLimit FK >- CVC_START.ALAggregateLimit
+AdditionalInsured FK >- CVC_START.AdditionalInsured
+CertificateHolders FK >- CVC_START.CertificateHolders
+UmbrellaPolicy FK >- CVC_START.UmbrellaPolicy
+ExcessPolicyLimit FK >- CVC_START.ExcessPolicyLimit
+ExcellLineBacking FK >- CVC_START.ExcellLineBacking
+OCIP FK >- CVC_START.OCIP
+OCIPCoverage FK >- CVC_START.OCIPCoverage
+OCIPSubDeductible FK >- CVC_START.OCIPSubDeductible
+OCIPOwnerDeductible FK >- CVC_START.OCIPOwnerDeductible
+OCIPDeductibleType FK >- CVC_START.OCIPDeductibleType
+OCIPTPA FK >- CVC_START.OCIPTPA
+OCIPBidCredit FK >- CVC_START.OCIPBidCredit
+OCIPOccurrenceLimit FK >- CVC_START.OCIPOccurrenceLimit
+OCIPAggregateLimit FK >- CVC_START.OCIPAggregateLimit
+OCIPExcessLimit FK >- CVC_START.OCIPExcessLimit
+GLSubAccount FK >- CVC_START.GLSubAccount
+State FK >- CVC_START.State
+PrevalingWage FK >- CVC_START.PrevalingWage
+WageDeterminationReceived FK >- CVC_START.WageDeterminationReceived
+CertifiedPayroll FK >- CVC_START.CertifiedPayroll
+ScheduleofValues FK >- CVC_START.ScheduleofValues
+BillDate FK >- CVC_START.BillDate
+PayDate FK >- CVC_START.PayDate
+Retention FK >- CVC_START.Retention
+BillingInstructions FK >- CVC_START.BillingInstructions
+AddBillingInstructions FK >- CVC_START.AddBillingInstructions
 
-CVC_JobSpecData
--
-JobNo Varchar pk fk - CVC_START.JobNo
-SubJobNo Varchar pk fk - CVC_START.SubJobNo
+CVC_JCIMPORT
+----
+PK FK >- CVC_START.PK
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
+JobNo Varchar pk FK >- CVC_START.JobNo
+SubJobNo FK >- CVC_START.SubJobNo
+Lots FK >- CVC_START.Lots
+Slab_Type FK >- CVC_START.Slab_Type
+Lot_No FK >- CVC_START.Lot_No
+Garage_Orientation FK >- CVC_START.Garage_Orientation
+Plan_Name FK >- CVC_START.Plan_Name
+Plan_ElvOpt FK >- CVC_START.Plan_ElvOpt
+Contract_Price FK >- CVC_START.Contract_Price
+Name_Add_For_1 FK >- CVC_START.Name_Add_For_1
+Add_For_1 FK >- CVC_START.Add_For_1
+Name_Add_For_2 FK >- CVC_START.Name_Add_For_2
+Add_For_2 FK >- CVC_START.Add_For_2
+Name_Add_For_3 FK >- CVC_START.Name_Add_For_3
+Add_For_3 FK >- CVC_START.Add_For_3
+Name_Add_For_4 FK >- CVC_START.Name_Add_For_4
+Add_For_4 FK >- CVC_START.Add_For_4
+TotalAdjusted FK >- CVC_START.TotalAdjusted
+
 
 CVC_Contracts
 ----
-JobNo Varchar FK - CVC_START.JobNo
-ContractNo Varchar pk
+PK FK >- CVC_START.PK
+JobNo FK >- CVC_START.JobNo
+ContractNo
+CVC_Contracts_PK FK >- CVC_START.CVC_Contracts_PK
+Contract_No FK >- CVC_START.Contract_No
+Contract_Description FK >- CVC_START.Contract_Description
+Contract_Date FK >- CVC_START.Contract_Date
+Builder_Eff_Release FK >- CVC_START.Builder_Eff_Release
+Eff_Date FK >- CVC_START.Eff_Date
+Identifying_Notes FK >- CVC_START.Identifying_Notes
+Footprint_SF FK >- CVC_START.Footprint_SF
+Labor_MH FK >- CVC_START.Labor_MH
+Concrete_CY FK >- CVC_START.Concrete_CY
+Rock_TN FK >- CVC_START.Rock_TN
+Steel_LBS FK >- CVC_START.Steel_LBS
+PT_Cable_LF FK >- CVC_START.PT_Cable_LF
+Pumping_CY FK >- CVC_START.Pumping_CY
+Lumber_BF FK >- CVC_START.Lumber_BF
+Sage_Estimate_Amount FK >- CVC_START.Sage_Estimate_Amount
+RFA_Amount FK >- CVC_START.RFA_Amount
+Proposal_Amount FK >- CVC_START.Proposal_Amount
+Draw_1 FK >- CVC_START.Draw_1
+Draw_2 FK >- CVC_START.Draw_2
+Draw_3 FK >- CVC_START.Draw_3
+Draw_4 FK >- CVC_START.Draw_4
+OCIP_Amount FK >- CVC_START.OCIP_Amount
+Contract_Amount FK >- CVC_START.Contract_Amount
+Contract_vs_Proposal_Delta FK >- CVC_START.Contract_vs_Proposal_Delta
+Delta_Variance_Percent FK >- CVC_START.Delta_Variance_Percent
+Created_by FK >- CVC_START.Created_by
+Created date FK >- CVC_START.Created
+Estimate_Name FK >- CVC_START.Estimate_Name
+Proposal_Name FK >- CVC_START.Proposal_Name
+Contract_File_Name FK >- CVC_START.Contract_File_Name
+Notes FK >- CVC_START.Notes
 
 CVC_RFA
 ----
-JobNo Varchar FK - CVC_START.JobNo
-ContractNo Varchar pk FK >- CVC_Contracts.ContractNo
+PK FK >- CVC_START.PK
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
+JobNo Varchar pk FK >- CVC_START.JobNo
+FND_Increase_Dollar_per_hour FK >- CVC_START.FND_Increase_Dollar_per_hour
+FND_Hours_per_plan FK >- CVC_START.FND_Hours_per_plan
+FND_Increase_Dollar_per_CY FK >- CVC_START.FND_Increase_Dollar_per_CY
+FND_CY_per_plan FK >- CVC_START.FND_CY_per_plan
+FND_Increase_Dollar_per_RockTN FK >- CVC_START.FND_Increase_Dollar_per_RockTN
+FND_RockTN_per_plan FK >- CVC_START.FND_RockTN_per_plan
+FND_Increase_Dollar_per_SteelTN FK >- CVC_START.FND_Increase_Dollar_per_SteelTN
+FND_SteelTN_per_plan FK >- CVC_START.FND_SteelTN_per_plan
+FND_Increase_Dollar_per_PT_Cable_LF FK >- CVC_START.FND_Increase_Dollar_per_PT_Cable_LF
+FND_PT_Cable_LF_per_plan FK >- CVC_START.FND_PT_Cable_LF_per_plan
+FND_Increase_Dollar_per_Pump_CY FK >- CVC_START.FND_Increase_Dollar_per_Pump_CY
+Pump_CY_per_plan FK >- CVC_START.Pump_CY_per_plan
+FND_Contract_Price FK >- CVC_START.FND_Contract_Price
+FND_Requested_Increase FK >- CVC_START.FND_Requested_Increase
+FND_Total FK >- CVC_START.FND_Total
+FLT_Plan_Name FK >- CVC_START.FLT_Plan_Name
+FLT_Plan_ElvOpt FK >- CVC_START.FLT_Plan_ElvOpt
+Increase_Dollar_per_SF_DW FK >- CVC_START.Increase_Dollar_per_SF_DW
+FLT_Item_DW FK >- CVC_START.FLT_Item_DW
+FLT_Increase_Dollar_per_Front_Walk FK >- CVC_START.FLT_Increase_Dollar_per_Front_Walk
+FLT_Item_Front_walk FK >- CVC_START.FLT_Item_Front_walk
+FLT_Increase_Dollar_per_Porch FK >- CVC_START.FLT_Increase_Dollar_per_Porch
+FLT_Item_Porch FK >- CVC_START.FLT_Item_Porch
+FLT_Increase_Dollar_per_Stoop FK >- CVC_START.FLT_Increase_Dollar_per_Stoop
+FLT_Item_Stoop FK >- CVC_START.FLT_Item_Stoop
+FLT_Increase_Dollar_per_Patio FK >- CVC_START.FLT_Increase_Dollar_per_Patio
+FLT_Item_Patio FK >- CVC_START.FLT_Item_Patio
+FLT_Increase_Dollar_per_Service_Walk FK >- CVC_START.FLT_Increase_Dollar_per_Service_Walk
+FLT_Item_Service_Walk FK >- CVC_START.FLT_Item_Service_Walk
+FLT_Increase_Dollar_per_Approach FK >- CVC_START.FLT_Increase_Dollar_per_Approach
+FLT_Item_Approach FK >- CVC_START.FLT_Item_Approach
+FLT_Increase_Dollar_per_City_Walk FK >- CVC_START.FLT_Increase_Dollar_per_City_Walk
+FLT_Item_City_Walk FK >- CVC_START.FLT_Item_City_Walk
+FLT_Increase_Dollar_per_Steps FK >- CVC_START.FLT_Increase_Dollar_per_Steps
+FLT_Item_Steps FK >- CVC_START.FLT_Item_Steps
+FLT_Increase_Dollar_per_FW_VarItem1 FK >- CVC_START.FLT_Increase_Dollar_per_FW_VarItem1
+FLT_Item_FW_VarItem1 FK >- CVC_START.FLT_Item_FW_VarItem1
+FLT_Increase_Dollar_per_FW_VarItem2 FK >- CVC_START.FLT_Increase_Dollar_per_FW_VarItem2
+FLT_Item_FW_VarItem2 FK >- CVC_START.FLT_Item_FW_VarItem2
+FLT_Increase_Dollar_per_FW_VarItem3 FK >- CVC_START.FLT_Increase_Dollar_per_FW_VarItem3
+FLT_Item_FW_VarItem3 FK >- CVC_START.FLT_Item_FW_VarItem3
+FLT_Increase_Dollar_per_FW_VarItem4 FK >- CVC_START.FLT_Increase_Dollar_per_FW_VarItem4
+FLT_Item_FW_VarItem4 FK >- CVC_START.FLT_Item_FW_VarItem4
+FLT_Contract_Price FK >- CVC_START.FLT_Contract_Price
+FLT_Requested_Increase FK >- CVC_START.FLT_Requested_Increase
+FLT_Total FK >- CVC_START.FLT_Total
+Supervisor FK >- CVC_START.Supervisor
+PO_No FK >- CVC_START.PO_No
+Warehouse_No FK >- CVC_START.Warehouse_No
+Staging_Location FK >- CVC_START.Staging_Location
 
 CVC_PLP
 ----
-JobNo Varchar FK - CVC_START.JobNo
-SubJobNo Varchar pk FK >- CVC_START.SubJobNo
+JobNo
+SubJobNo
 
 CVC_START
 ----
 JobNo
 SubJobNo
-Lot Varchar pk FK - CVC_JobCostData.SubJobNo
 CVC_ContractInformation_PK FK >- CVC_ContractInformationData.CVC_ContractInformation_PK
 Estimate_PK FK
 CompanyID
@@ -261,7 +450,6 @@ FoundationConcreteQuoteDate
 FoundationConreteIncreaseDate
 FoundationMixDesignNo
 FlatworkMixDesignNo
-FoundationVaporRetarder
 ContractRevision
 Owner
 Contractor
@@ -286,7 +474,7 @@ ScopeReviewDate
 CommentsSentDate
 CommentsResponseDate
 ContractExecutedDate
-ContractStatus,
+ContractStatus
 InsuranceStatus
 OpsContactPerson
 APContactPerson
@@ -302,7 +490,7 @@ GLCompOpLimit
 GLPollution
 CompletedOpsReq
 GLPersInjuryLimit
-GLOccurance/Claim
+GLOccuranceClaim
 GLLimit
 WCBodilyInjuryLimit
 WCDiseaseLimit
@@ -339,7 +527,7 @@ AddBillingInstructions
 Lots
 Slab_Type
 Lot_No
-Garage Orientation
+Garage_Orientation
 Plan_Name
 Plan_ElvOpt
 Contract_Price
@@ -351,12 +539,13 @@ Name_Add_For_3
 Add_For_3
 Name_Add_For_4
 Add_For_4
+TotalAdjusted
 CVC_Contracts_PK
 Contract_No
 Contract_Description
 Contract_Date
 Builder_Eff_Release
-Eff Date
+Eff_Date
 Identifying_Notes
 Footprint_SF
 Labor_MH
@@ -433,6 +622,8 @@ Supervisor
 PO_No
 Warehouse_No
 Staging_Location
+
+
 
 ```
 
