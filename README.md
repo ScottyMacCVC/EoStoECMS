@@ -12,6 +12,7 @@ Grand Project to encompass and map all steps within CVC's construction process
 - What data do we need to add? 
 - Schedule of tasks would clarify where the team is. EX: Contracts processing. What has been processed? 
 - Showing Daily projects will clarify what the team needs and will help identify roadblocks. 
+- Filling out Logs is typical at CVC. The issue is we are managing several different excel logs that don't talk to each other. The goal would be to unify the information and provide a way for the team to interact. We want to be able to assign tasks and place the tasks on a shared dashboard. EoS has the power to do this work, but we need to provide a workflow for the team. Training, skills, and processing the work will provide the feedback we need to be successful. That would be fuckin dope. 
 
 ### EoS to START Process
 - Step 1 is UDFs Workflow
