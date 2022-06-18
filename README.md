@@ -3,12 +3,15 @@ Grand Project to encompass and map all steps within CVC's construction process
 
 ## Current Challenges
 
-### We need to go through the entry of the START from EoS. 
+### We need to go through the entry of the START from EoS. One stop shop to input all information, grab documents, and a central location for the team to interact. 
 - What are the steps? 
+- What info do we need to get into the system?
 - Who is involved? 
 - Is the process fluid? 
 - What data can we currently import? 
 - What data do we need to add? 
+- Schedule of tasks would clarify where the team is. EX: Contracts processing. What has been processed? 
+- Showing Daily projects will clarify what the team needs and will help identify roadblocks. 
 
 ### EoS to START Process
 - Step 1 is UDFs Workflow
