@@ -371,10 +371,6 @@ FLT_Item_FW_VarItem4 FK >- CVC_START.FLT_Item_FW_VarItem4
 FLT_Contract_Price FK >- CVC_START.FLT_Contract_Price
 FLT_Requested_Increase FK >- CVC_START.FLT_Requested_Increase
 FLT_Total FK >- CVC_START.FLT_Total
-Supervisor FK >- CVC_START.Supervisor
-PO_No FK >- CVC_START.PO_No
-Warehouse_No FK >- CVC_START.Warehouse_No
-Staging_Location FK >- CVC_START.Staging_Location
 PublishBy
 PublishDate
 
@@ -653,10 +649,6 @@ FLT_Item_FW_VarItem4
 FLT_Contract_Price
 FLT_Requested_Increase
 FLT_Total
-Supervisor
-PO_No
-Warehouse_No
-Staging_Location
 PLP_PO_No FK >- CVC_PLP.PLP_PO_No
 PLP_WarehouseNo FK >- CVC_PLP.PLP_WarehouseNo
 PLP_PartDescription FK >- CVC_PLP.PLP_PartDescription
