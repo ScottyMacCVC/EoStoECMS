@@ -128,24 +128,24 @@ DivisionID FK >- CVC_START.DivisionID
 BuilderID FK >- CVC_START.BuilderID
 JobNo Varchar pk FK >- CVC_START.JobNo
 SubJobNo FK >- CVC_START.SubJobNo
-Contract
-Item Number
-ContractDescription
-ContractDescription2
-EffectiveDate
-ContractAmount
-EstimatedQuantity
-ConversionUnitMeasure
-UnitPrice
-JCDistSubJob
-JCDistribution
-JCDistCostType
-JCDistRecordType
-FixedContract
-TaxableCode1
-TaxableCode2
-TaxableCode3
-QuantitiyContract1to4
+CI_Contract FK >- CVC_START.CI_Contract
+CI_ItemNumber FK >- CVC_START.CI_ItemNumber
+CI_ContractDescription FK >- CVC_START.CI_ContractDescription
+CI_ContractDescription2 FK >- CVC_START.CI_ContractDescription2
+CI_EffectiveDate FK >- CVC_START.CI_EffectiveDate
+CI_ContractAmount FK >- CVC_START.CI_ContractAmount
+CI_EstimatedQuantity FK >- CVC_START.CI_EstimatedQuantity
+CI_ConversionUnitMeasure FK >- CVC_START.CI_ConversionUnitMeasure
+CI_UnitPrice FK >- CVC_START.CI_UnitPrice
+CI_JCDistSubJob FK >- CVC_START.CI_JCDistSubJob
+CI_JCDistribution FK >- CVC_START.CI_JCDistribution
+CI_JCDistCostType FK >- CVC_START.CI_JCDistCostType
+CI_JCDistRecordType FK >- CVC_START.CI_JCDistRecordType
+CI_FixedContract FK >- CVC_START.CI_FixedContract
+CI_TaxableCode1 FK >- CVC_START.CI_TaxableCode1
+CI_TaxableCode2 FK >- CVC_START.CI_TaxableCode2
+CI_TaxableCode3 FK >- CVC_START.CI_TaxableCode3
+CI_QuantitiyContract_1to4 FK >- CVC_START.CI_QuantitiyContract_1to4
 
 CVC_JobInfoData
 -
@@ -649,8 +649,24 @@ Supervisor
 PO_No
 Warehouse_No
 Staging_Location
-
-
+CI_Contract
+CI_ItemNumber
+CI_ContractDescription
+CI_ContractDescription2
+CI_EffectiveDate
+CI_ContractAmount
+CI_EstimatedQuantity
+CI_ConversionUnitMeasure
+CI_UnitPrice
+CI_JCDistSubJob
+CI_JCDistribution
+CI_JCDistCostType
+CI_JCDistRecordType
+CI_FixedContract
+CI_TaxableCode1
+CI_TaxableCode2
+CI_TaxableCode3
+CI_QuantitiyContract_1to4
 
 
 ```
