@@ -117,35 +117,8 @@ QuantityBare FK >- CVC_START.QuantityBare
 Unit FK >- CVC_START.Unit
 Hours FK >- CVC_START.Hours
 Amount FK >- CVC_START.Amount
-PublishBy FK >- CVC_START.PublishBy
-PublishDate FK >- CVC_START.PublishDate
-
-CVC_CI_IMPORT
--
-PK FK >- CVC_START.PK
-CompanyID FK >- CVC_START.CompanyID
-DivisionID FK >- CVC_START.DivisionID
-BuilderID FK >- CVC_START.BuilderID
-JobNo Varchar pk FK >- CVC_START.JobNo
-SubJobNo FK >- CVC_START.SubJobNo
-CI_Contract FK >- CVC_START.CI_Contract
-CI_ItemNumber FK >- CVC_START.CI_ItemNumber
-CI_ContractDescription FK >- CVC_START.CI_ContractDescription
-CI_ContractDescription2 FK >- CVC_START.CI_ContractDescription2
-CI_EffectiveDate FK >- CVC_START.CI_EffectiveDate
-CI_ContractAmount FK >- CVC_START.CI_ContractAmount
-CI_EstimatedQuantity FK >- CVC_START.CI_EstimatedQuantity
-CI_ConversionUnitMeasure FK >- CVC_START.CI_ConversionUnitMeasure
-CI_UnitPrice FK >- CVC_START.CI_UnitPrice
-CI_JCDistSubJob FK >- CVC_START.CI_JCDistSubJob
-CI_JCDistribution FK >- CVC_START.CI_JCDistribution
-CI_JCDistCostType FK >- CVC_START.CI_JCDistCostType
-CI_JCDistRecordType FK >- CVC_START.CI_JCDistRecordType
-CI_FixedContract FK >- CVC_START.CI_FixedContract
-CI_TaxableCode1 FK >- CVC_START.CI_TaxableCode1
-CI_TaxableCode2 FK >- CVC_START.CI_TaxableCode2
-CI_TaxableCode3 FK >- CVC_START.CI_TaxableCode3
-CI_QuantitiyContract_1to4 FK >- CVC_START.CI_QuantitiyContract_1to4
+PublishBy
+PublishDate
 
 CVC_JobInfoData
 -
@@ -188,8 +161,8 @@ FoundationConcreteQuoteDate FK >- CVC_START.FoundationConcreteQuoteDate
 FoundationConreteIncreaseDate FK >- CVC_START.FoundationConreteIncreaseDate
 FoundationMixDesignNo FK >- CVC_START.FoundationMixDesignNo
 FlatworkMixDesignNo FK >- CVC_START.FlatworkMixDesignNo
-PublishBy FK >- CVC_START.PublishBy
-PublishDate FK >- CVC_START.PublishDate
+PublishBy
+PublishDate
 
 CVC_LegalData
 -
@@ -272,6 +245,8 @@ PayDate FK >- CVC_START.PayDate
 Retention FK >- CVC_START.Retention
 BillingInstructions FK >- CVC_START.BillingInstructions
 AddBillingInstructions FK >- CVC_START.AddBillingInstructions
+PublishBy
+PublishDate
 
 CVC_START-SLAB
 ----
@@ -298,6 +273,8 @@ Add_For_3 FK >- CVC_START.Add_For_3
 Name_Add_For_4 FK >- CVC_START.Name_Add_For_4
 Add_For_4 FK >- CVC_START.Add_For_4
 TotalAdjusted FK >- CVC_START.TotalAdjusted
+PublishBy
+PublishDate
 
 
 CVC_Contracts
@@ -337,6 +314,8 @@ Estimate_Name FK >- CVC_START.Estimate_Name
 Proposal_Name FK >- CVC_START.Proposal_Name
 Contract_File_Name FK >- CVC_START.Contract_File_Name
 Notes FK >- CVC_START.Notes
+PublishBy
+PublishDate
 
 CVC_RFA
 ----
@@ -396,6 +375,8 @@ Supervisor FK >- CVC_START.Supervisor
 PO_No FK >- CVC_START.PO_No
 Warehouse_No FK >- CVC_START.Warehouse_No
 Staging_Location FK >- CVC_START.Staging_Location
+PublishBy
+PublishDate
 
 CVC_PLP
 ----
@@ -406,8 +387,6 @@ DivisionID FK >- CVC_START.DivisionID
 BuilderID FK >- CVC_START.BuilderID
 JobNo Varchar pk FK >- CVC_START.JobNo
 SubJobNo Varchar pk FK >- CVC_START.SubJobNo
-PublishBy
-PublishDate
 Supervisor
 PLP_PO_No
 PLP_WarehouseNo
@@ -427,6 +406,9 @@ PLP_Order2
 PLP_Order3
 PLP_Order4
 PLP_Order5
+PublishBy
+PublishDate
+
 
 CVC_START
 ----
@@ -675,24 +657,6 @@ Supervisor
 PO_No
 Warehouse_No
 Staging_Location
-CI_Contract
-CI_ItemNumber
-CI_ContractDescription
-CI_ContractDescription2
-CI_EffectiveDate
-CI_ContractAmount
-CI_EstimatedQuantity
-CI_ConversionUnitMeasure
-CI_UnitPrice
-CI_JCDistSubJob
-CI_JCDistribution
-CI_JCDistCostType
-CI_JCDistRecordType
-CI_FixedContract
-CI_TaxableCode1
-CI_TaxableCode2
-CI_TaxableCode3
-CI_QuantitiyContract_1to4
 PLP_PO_No FK >- CVC_PLP.PLP_PO_No
 PLP_WarehouseNo FK >- CVC_PLP.PLP_WarehouseNo
 PLP_PartDescription FK >- CVC_PLP.PLP_PartDescription
