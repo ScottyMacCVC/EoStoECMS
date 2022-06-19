@@ -399,11 +399,38 @@ Staging_Location FK >- CVC_START.Staging_Location
 
 CVC_PLP
 ----
-JobNo
-SubJobNo
+PK FK >- CVC_START.PK
+Estimate_PK FK >- CVC_START.Estimate_PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
+JobNo Varchar pk FK >- CVC_START.JobNo
+SubJobNo Varchar pk FK >- CVC_START.SubJobNo
+PublishBy
+PublishDate
+Supervisor
+PLP_PO_No
+PLP_WarehouseNo
+PLP_StagingLocation
+PLP_PartDescription
+PLP_PartNo
+PLP_CostDistPartNo
+PLP_BuiltOrder1
+PLP_BuiltOrder2
+PLP_BuiltOrder3
+PLP_BuiltOrder4
+PLP_BuiltOrder5
+PLP_CostType
+PLP_UofMPartNo
+PLP_Order1
+PLP_Order2
+PLP_Order3
+PLP_Order4
+PLP_Order5
 
 CVC_START
 ----
+PK
 JobNo
 SubJobNo
 CVC_ContractInformation_PK FK >- CVC_ContractInformationData.CVC_ContractInformation_PK
@@ -438,7 +465,6 @@ CostType
 QuantityBare
 Hours
 Amount
-PK
 FoundationSlabEdge
 FoundationFootingSize
 FoundationFootingRebar
@@ -667,8 +693,18 @@ CI_TaxableCode1
 CI_TaxableCode2
 CI_TaxableCode3
 CI_QuantitiyContract_1to4
-
-
+PLP_PO_No FK >- CVC_PLP.PLP_PO_No
+PLP_WarehouseNo FK >- CVC_PLP.PLP_WarehouseNo
+PLP_PartDescription FK >- CVC_PLP.PLP_PartDescription
+PLP_PartNo FK >- CVC_PLP.PLP_PartNo
+PLP_CostDistPartNo FK >- CVC_PLP.PLP_CostDistPartNo
+PLP_BuiltOrder1 FK >- CVC_PLP.PLP_BuiltOrder1
+PLP_BuiltOrder2 FK >- CVC_PLP.PLP_BuiltOrder2
+PLP_BuiltOrder3 FK >- CVC_PLP.PLP_BuiltOrder3
+PLP_BuiltOrder4 FK >- CVC_PLP.PLP_BuiltOrder4
+PLP_BuiltOrder5 FK >- CVC_PLP.PLP_BuiltOrder5
+PLP_CostType FK >- CVC_PLP.PLP_CostType
+PLP_UofMPartNo FK >- CVC_PLP.PLP_UofMPartNo
 ```
 
 
