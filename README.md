@@ -101,7 +101,7 @@ TaxCode3
 PublishBy
 PublishDate
 
-CVC_JobCostData
+CVC_JobCostData "AKA JC IMPORT" 
 -
 PK FK >- CVC_START.PK
 Estimate_PK FK >- CVC_START.Estimate_PK
@@ -119,6 +119,33 @@ Hours FK >- CVC_START.Hours
 Amount FK >- CVC_START.Amount
 PublishBy FK >- CVC_START.PublishBy
 PublishDate FK >- CVC_START.PublishDate
+
+CVC_CI_IMPORT
+-
+PK FK >- CVC_START.PK
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
+BuilderID FK >- CVC_START.BuilderID
+JobNo Varchar pk FK >- CVC_START.JobNo
+SubJobNo FK >- CVC_START.SubJobNo
+Contract
+Item Number
+ContractDescription
+ContractDescription2
+EffectiveDate
+ContractAmount
+EstimatedQuantity
+ConversionUnitMeasure
+UnitPrice
+JCDistSubJob
+JCDistribution
+JCDistCostType
+JCDistRecordType
+FixedContract
+TaxableCode1
+TaxableCode2
+TaxableCode3
+QuantitiyContract1to4
 
 CVC_JobInfoData
 -
@@ -246,7 +273,7 @@ Retention FK >- CVC_START.Retention
 BillingInstructions FK >- CVC_START.BillingInstructions
 AddBillingInstructions FK >- CVC_START.AddBillingInstructions
 
-CVC_JCIMPORT
+CVC_START-SLAB
 ----
 PK FK >- CVC_START.PK
 Estimate_PK FK >- CVC_START.Estimate_PK
@@ -622,6 +649,8 @@ Supervisor
 PO_No
 Warehouse_No
 Staging_Location
+
+
 
 
 ```
