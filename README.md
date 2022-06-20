@@ -101,22 +101,22 @@ TaxCode3
 PublishBy
 PublishDate
 
-CVC_JobCostData "AKA JC IMPORT" 
+CVC_JobCostData
 -
 PK FK >- CVC_START.PK
 Estimate_PK FK >- CVC_START.Estimate_PK
-CompanyID FK >- CVC_START.CompanyID
-DivisionID FK >- CVC_START.DivisionID
+CompanyID FK >- JC_IMPORT.CO_NO
+DivisionID FK >- JC_IMPORT.DIV_NO
 BuilderID FK >- CVC_START.BuilderID
-JobNo Varchar pk FK >- CVC_START.JobNo
-SubJobNo FK >- CVC_START.SubJobNo
-CostCode FK >- CVC_START.CostCode
-CostType FK >- CVC_START.CostType
-Quantity FK >- CVC_START.Quantity
+JobNo Varchar pk FK >- JC_IMPORT.PROJJOB_NO
+SubJobNo FK >- JC_IMPORT.SUBPROJJOB_NO
+CostCode FK >- JC_IMPORT.JC_DIST
+CostType FK >- JC_IMPORT.CT
+Quantity FK >- JC_IMPORT.BUDG_QTY
 QuantityBare FK >- CVC_START.QuantityBare
-Unit FK >- CVC_START.Unit
-Hours FK >- CVC_START.Hours
-Amount FK >- CVC_START.Amount
+Unit FK >- JC_IMPORT.UNIT_MEASURE
+Hours FK >- JC_IMPORT.BUDG_HOURS
+Amount FK >- JC_IMPORT.BUDG_AMOUNT
 PublishBy
 PublishDate
 
@@ -404,6 +404,47 @@ PLP_Order4
 PLP_Order5
 PublishBy
 PublishDate
+
+JC_IMPORT
+----
+CO_NO
+DIV_NO
+PROJJOB_NO
+SUBPROJJOB_NO
+JC_DIST
+CT
+BUDG_HOURS
+BUDG_QTY
+BUDG_AMOUNT
+UNIT_MEASURE
+ASBIDBUDG_AMOUNT
+
+CI_IMPORT
+----
+COMPANY FK >- CVC_ContractInformationData.CompanyID
+DIVISION FK >- CVC_ContractInformationData.DivisionID
+CUSTOMER FK >- CVC_ContractInformationData.BuilderID
+JOB_NUMBER FK >- CVC_ContractInformationData.JobNo
+SUBJOB_NUMBER FK >- CVC_ContractInformationData.SubJobNo
+CONTRACT FK >- CVC_ContractInformationData.Contract
+ITEM_NUMBER FK >- CVC_ContractInformationData.ItemNumber
+CONTRACT_DESCRIPTION FK >- CVC_ContractInformationData.Plan
+CONTRACT_DESCRIPTION2 FK >- CVC_ContractInformationData.Address
+EFFECTIVE_DATE FK >- CVC_ContractInformationData.EffectiveDate
+CONTRACT_AMOUNT FK >- CVC_ContractInformationData.ContractAmount
+ESTIMATED_QUANTITY FK >- CVC_ContractInformationData.Quantity
+CONVERSION_UNIT_MEASURE FK >- CVC_ContractInformationData.Unit
+UNIT_PRICE FK >- CVC_ContractInformationData.UnitPrice
+JC_DIST_SUBJOB FK >- CVC_ContractInformationData.JCDistributionSubJob
+JC_DISTRIBUTION FK >- CVC_ContractInformationData.JCDistribution
+JC_DIST_COST_TYPE FK >- CVC_ContractInformationData.JCDistributionCostType
+JC_DIST_RECORD_TYPE FK >- CVC_ContractInformationData.JCDistributionRecordType
+FIXED_CONTRACT FK >- CVC_ContractInformationData.FixedContract
+INCLUDE_IN_MARKUP FK >- CVC_ContractInformationData.IncludeInMarkup
+TAXABLE_CODE1 FK >- CVC_ContractInformationData.TaxCode1
+TAXABLE_CODE2 FK >- CVC_ContractInformationData.TaxCode2
+TAXABLE_CODE3 FK >- CVC_ContractInformationData.TaxCode3
+QUANTITY_CONTRACT_1TO4
 
 
 CVC_START
