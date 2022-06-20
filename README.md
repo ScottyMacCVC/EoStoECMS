@@ -105,18 +105,18 @@ CVC_JobCostData
 -
 PK FK >- CVC_START.PK
 Estimate_PK FK >- CVC_START.Estimate_PK
-CompanyID FK >- JC_IMPORT.CO_NO
-DivisionID FK >- JC_IMPORT.DIV_NO
+CompanyID FK >- CVC_START.CompanyID
+DivisionID FK >- CVC_START.DivisionID
 BuilderID FK >- CVC_START.BuilderID
-JobNo Varchar pk FK >- JC_IMPORT.PROJJOB_NO
-SubJobNo FK >- JC_IMPORT.SUBPROJJOB_NO
-CostCode FK >- JC_IMPORT.JC_DIST
-CostType FK >- JC_IMPORT.CT
-Quantity FK >- JC_IMPORT.BUDG_QTY
+JobNo Varchar pk FK >- CVC_START.PK
+SubJobNo FK >- CVC_START.SubJobNo
+CostCode FK >- CVC_START.CostCode
+CostType FK >- CVC_START.CostType
+Quantity FK >- CVC_START.Quantity
 QuantityBare FK >- CVC_START.QuantityBare
-Unit FK >- JC_IMPORT.UNIT_MEASURE
-Hours FK >- JC_IMPORT.BUDG_HOURS
-Amount FK >- JC_IMPORT.BUDG_AMOUNT
+Unit FK >- CVC_START.Unit
+Hours FK >- CVC_START.Hours
+Amount FK >- CVC_START.Amount
 PublishBy
 PublishDate
 
@@ -407,17 +407,17 @@ PublishDate
 
 JC_IMPORT
 ----
-CO_NO
-DIV_NO
-PROJJOB_NO
-SUBPROJJOB_NO
-JC_DIST
-CT
-BUDG_HOURS
-BUDG_QTY
-BUDG_AMOUNT
-UNIT_MEASURE
-ASBIDBUDG_AMOUNT
+CO_NO FK >- CVC_JobCostData.CompanyID
+DIV_NO FK >- CVC_JobCostData.DivisionID
+PROJJOB_NO FK >- CVC_JobCostData.JobNo
+SUBPROJJOB_NO FK >- CVC_JobCostData.SubJobNo
+JC_DIST FK >- CVC_JobCostData.CostCode
+CT FK >- CVC_JobCostData.CostType
+BUDG_HOURS FK >- CVC_JobCostData.Hours
+BUDG_QTY FK >- CVC_JobCostData.Quantity
+BUDG_AMOUNT FK >- CVC_JobCostData.Amount
+UNIT_MEASURE FK >- CVC_JobCostData.Unit
+ASBIDBUDG_AMOUNT FK >- CVC_JobCostData.QuantityBare
 
 CI_IMPORT
 ----
@@ -445,7 +445,6 @@ TAXABLE_CODE1 FK >- CVC_ContractInformationData.TaxCode1
 TAXABLE_CODE2 FK >- CVC_ContractInformationData.TaxCode2
 TAXABLE_CODE3 FK >- CVC_ContractInformationData.TaxCode3
 QUANTITY_CONTRACT_1TO4
-
 
 CVC_START
 ----
@@ -702,6 +701,8 @@ PLP_BuiltOrder4 FK >- CVC_PLP.PLP_BuiltOrder4
 PLP_BuiltOrder5 FK >- CVC_PLP.PLP_BuiltOrder5
 PLP_CostType FK >- CVC_PLP.PLP_CostType
 PLP_UofMPartNo FK >- CVC_PLP.PLP_UofMPartNo
+
+
 ```
 
 
