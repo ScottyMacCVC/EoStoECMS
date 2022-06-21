@@ -148,7 +148,9 @@ START Process-Publish START Input-01-EoS Location by Estimate File
 - Staging.CVC_JobCostData
 
 ### ![CVC_ERD](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.21-ERD.png)
-ERD INFO for quickDBD
+ERD INFO for quickDBD 
+
+Link to Quick DBD - https://app.quickdatabasediagrams.com/#/d/JRWRi5
 
 ```
 CVC_ContractInformationData
@@ -787,6 +789,6 @@ PLP_UofMPartNo FK >- CVC_PLP.PLP_UofMPartNo
 
 ```
 
-https://app.quickdatabasediagrams.com/#/d/JRWRi5
+
 
 
