@@ -121,7 +121,8 @@ START Process-Publish START Input-01-EoS Location by Estimate File
 
 ![TrueSight Query](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-TrueSight%20Query.png)
 
-### KnowledgeBase
+### KnowledgeBase - Create Library
+- CVC needs to develop a library of questions and solutions
 
 ## Overviews of CVC and Processes
 
@@ -134,8 +135,6 @@ START Process-Publish START Input-01-EoS Location by Estimate File
 ### Generalized Cycle of Construction
 ![Generalized Cycle](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Generalized%20Cycle.png)
 
-### Basic Controlling Unit for SAP Based Products
-![Basic Controlling Unit](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Basic%20Controlling%20Unit.png)
 
 
 ## SQL Table Information -  Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
