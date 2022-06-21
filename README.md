@@ -71,7 +71,7 @@ START Process-Generate START Input Form-06-EoS FND Contract Input History
 
 ![START Process-Generate START Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
 
-Staging Table in Navigator
+Staging Tables-Job Cost Data
 
 ![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
 
