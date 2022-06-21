@@ -71,6 +71,10 @@ START Process-Generate START Input Form-06-EoS FND Contract Input History
 
 ![START Process-Generate START Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
 
+Staging Table in Navigator
+
+![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
+
 START Process-Log Contract Input-01-EoS Location by Estimate File
 
 ![START Process-Log Contract Input-01-EoS Location by Estimate File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Log%20Contract%20Input-01-EoS%20Location%20by%20Estimate%20File.png)
@@ -105,7 +109,7 @@ START Process-Publish START Input-01-EoS Location by Estimate File
 
 ![Mani Email](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Mani%20Email.png)
 
-![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
+
 
 
 ### We want to build TrueSight into our STARTs process. 
