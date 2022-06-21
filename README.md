@@ -149,6 +149,8 @@ Grand Project to encompass and map all steps within CVC's construction process
 
 ![TrueSight Query](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-TrueSight%20Query.png)
 
+
+
 ### KnowledgeBase - Create Library
 
 - CVC needs to develop a library of questions and solutions
@@ -158,6 +160,8 @@ Grand Project to encompass and map all steps within CVC's construction process
 START Process-Tasks- EoS will allow us to task members of the team with work items. We can track progress and know where the team is at any moment. 
 
 ![START Process-Tasks](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Tasks.png)
+
+
 
 ## Overviews of CVC and Processes
 
