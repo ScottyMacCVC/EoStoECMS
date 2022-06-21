@@ -19,13 +19,94 @@ Grand Project to encompass and map all steps within CVC's construction process
 - Step 2 is Contract Import Form
 - Step 3 is START Import Form
 
+START Process-Generate Contract Input Form-01-EoS Location
+
+![START Process-Generate Contract Input Form-01-EoS Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-01-EoS%20Location.png)
+
+START Process-Generate Contract Input Form-02-Current Form
+
+![START Process-Generate Contract Input Form-02-Current Form](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-02-Current%20Form.png)
+
+START Process-Generate Contract Input Form-03-File Location
+
+![START Process-Generate Contract Input Form-03-File Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-03-File%20Location.png)
+
+START Process-Generate Contract Input Form-04-File Structure
+
+![START Process-Generate Contract Input Form-04-File Structure](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-04-File%20Structure.png)
+
+START Process-Generate Contract Input Form-05-Successful Run
+
+![START Process-Generate Contract Input Form-05-Successful Run](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-05-Successful%20Run.png)
+
+START Process-Generate Contract Input Form-06-EoS FND Contract Input History
+
+![START Process-Generate Contract Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
+
+Staging Tables-Contract Information
+
+![Staging Tables-Contract Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Contract%20Information.png)
+
+START Process-Generate START Input Form-01-EoS Location
+
+![START Process-Generate START Input Form-01-EoS Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-01-EoS%20Location.png)
+
+START Process-Generate START Input Form-02-Current Form
+
+![START Process-Generate START Input Form-02-Current Form](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-02-Current%20Form.png)
+
+START Process-Generate START Input Form-03-File Location
+
+![START Process-Generate START Input Form-03-File Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-03-File%20Location.png)
+
+START Process-Generate START Input Form-04-File Structure
+
+![START Process-Generate START Input Form-04-File Structure](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-04-File%20Structure.png)
+
+START Process-Generate START Input Form-05-Successful Run
+
+![START Process-Generate START Input Form-05-Successful Run](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-05-Successful%20Run.png)
+
+START Process-Generate START Input Form-06-EoS FND Contract Input History
+
+![START Process-Generate START Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
+
+START Process-Log Contract Input-01-EoS Location by Estimate File
+
+![START Process-Log Contract Input-01-EoS Location by Estimate File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Log%20Contract%20Input-01-EoS%20Location%20by%20Estimate%20File.png)
+
+START Process-Project Information-Publish Job Specs-01-EoS Location by Project Information
+
+![START Process-Project Information-Publish Job Specs-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20Job%20Specs-01-EoS%20Location%20by%20Project%20Information.png)
+
+START Process-Project Information-Publish Lega Info-01-EoS Location by Project Information
+
+![START Process-Project Information-Publish Lega Info-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20Lega%20Info-01-EoS%20Location%20by%20Project%20Information.png)
+
+START Process-Project Information-Publish START Input-01-EoS Location by Project Information
+
+![START Process-Project Information-Publish START Input-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-01-EoS%20Location%20by%20Project%20Information.png)
+
+START Process-Project Information-Publish START Input-02-Pop-Up Source File
+
+![START Process-Project Information-Publish START Input-02-Pop-Up Source File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-02-Pop-Up%20Source%20File.png)
+
+START Process-Project Information-Publish START Input-03-Pop-Up File Explorer
+
+![START Process-Project Information-Publish START Input-03-Pop-Up File Explorer](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-03-Pop-Up%20File%20Explorer.png)
+
+START Process-Publish START Input-01-EoS Location by Estimate File
+
+![START Process-Publish START Input-01-EoS Location by Estimate File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Publish%20START%20Input-01-EoS%20Location%20by%20Estimate%20File.png)
+
+
+
 ### We need to build one START using company 98 from EoS and then Mani can test the staging table import.
 
 ![Mani Email](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Mani%20Email.png)
 
 ![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
 
-![Staging Tables-Contract Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Contract%20Information.png)
 
 ### We want to build TrueSight into our STARTs process. 
 - What is TrueSight? TrueSight is a report with all job cost items in an importable form. It grabs the average cost per cost distribution. We can save reports in html form and potentially create a connection between the report and the SAGE budget. The START process in EoS should have a budget update step. It should grab the TrueSight report numbers and update the sub job START budget. We would improve the TrueSight Report $/units by building machine learning into either the html code or the report. (Link to ML .py - https://github.com/ScottyMacCVC/CVC-SQL1-EOSNAVIGATOR_DEV/blob/main/machine_model-checkpoint.ipynb)
