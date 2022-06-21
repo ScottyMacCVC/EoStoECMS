@@ -140,16 +140,13 @@ START Process-Publish START Input-01-EoS Location by Estimate File
 
 ## SQL Table Information -  Server\instance: CVC-SQL1\EOSNAVIGATOR_DEV
 - Database: Navigator
-### Tables: 
+### Current Tables in Staging.CVC: 
 - Staging.CVC ContractInformationData
 - Staging.CVC_JobInfoData
 - Staging.CVC_LegalData
 - Staging.CVC_JobSpecData
 - Staging.CVC_JobCostData
-### Below 3 tables doesn't have any data in the DB tables.
-- Staging.CVC_LegalData
-- Staging.CVC_JobSpecData
-- Staging.CVC_JobCostData
+
 ### ![CVC_ERD](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.21-ERD.png)
 ERD INFO for quickDBD
 
