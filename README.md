@@ -827,6 +827,10 @@ PLP_UofMPartNo FK >- CVC_PLP.PLP_UofMPartNo
 
 ```
 
+Request for Proposal to Accounts Receivable Map
 
+![RFPtoAR Map](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.21-RFPtoAR%20Map.png)
 
+```
 
+```
