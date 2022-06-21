@@ -705,6 +705,6 @@ PLP_UofMPartNo FK >- CVC_PLP.PLP_UofMPartNo
 
 ```
 
-
+https://app.quickdatabasediagrams.com/#/d/JRWRi5
 
 
