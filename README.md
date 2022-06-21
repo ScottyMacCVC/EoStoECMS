@@ -19,87 +19,115 @@ Grand Project to encompass and map all steps within CVC's construction process
 - Step 2 is Contract Import Form
 - Step 3 is START Import Form
 
-START Process-Generate Contract Input Form-01-EoS Location
+**START Process-Generate Contract Input Form-01-EoS Location**
+
+- We can generate an Input Form for the Contract information. The Input form can be accessed by right clicking an estimate, hovering eCMS Integration, and clicking Generate Contract Input Form
 
 ![START Process-Generate Contract Input Form-01-EoS Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-01-EoS%20Location.png)
 
-START Process-Generate Contract Input Form-02-Current Form
+**START Process-Generate Contract Input Form-02-Current Form**
+
+- The current form is blank when we Generate the Input Form. We should have the White Boxes auto-fill and our team fills our anything in the Salmon-Colored boxes. What is causing the form to generate as blank values?
 
 ![START Process-Generate Contract Input Form-02-Current Form](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-02-Current%20Form.png)
 
-START Process-Generate Contract Input Form-03-File Location
+**START Process-Generate Contract Input Form-03-File Location**
+
+- The excel will print to a file location. This example, we saved to the project folder and you can see the 5 excels saved in the Documents section. 
 
 ![START Process-Generate Contract Input Form-03-File Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-03-File%20Location.png)
 
-START Process-Generate Contract Input Form-04-File Structure
+**START Process-Generate Contract Input Form-04-File Structure**
+
+- There is a Contract Input Folder. We would use this folder in production for any and all excels saved for the START process. 
 
 ![START Process-Generate Contract Input Form-04-File Structure](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-04-File%20Structure.png)
 
-START Process-Generate Contract Input Form-05-Successful Run
+**START Process-Generate Contract Input Form-05-Successful Run**
+
+- The example here is a test we did in February. All White sections were auto-filled by our budgets and the Salmon sections were hand entries during the Contract Input Form process. What made this test successful? Do we have a log of the action(s)?
 
 ![START Process-Generate Contract Input Form-05-Successful Run](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-05-Successful%20Run.png)
 
-START Process-Generate Contract Input Form-06-EoS FND Contract Input History
+**START Process-Generate Contract Input Form-06-EoS FND Contract Input History**
+
+- The EoS FND Contract Input History shows the items we send to the Staging Tables. 
 
 ![START Process-Generate Contract Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20Contract%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
 
-Staging Tables-Contract Information
+**Staging Tables-Contract Information**
+
+- Here is what we have successfully staged in our Navigator Contract Information table. Although it was successful to this location, we cannot test the connection to eCMS with our production companies (Company 8 or 11). We need to have the information stage under Company _98 - Test Company_. 
 
 ![Staging Tables-Contract Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Contract%20Information.png)
 
-START Process-Generate START Input Form-01-EoS Location
+**START Process-Generate START Input Form-01-EoS Location**
+
+- We can generate an Input Form for the STARTs. The Input form can be accessed by right clicking an estimate, hovering eCMS Integration, and clicking Generate START Input Form
 
 ![START Process-Generate START Input Form-01-EoS Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-01-EoS%20Location.png)
 
-START Process-Generate START Input Form-02-Current Form
+**START Process-Generate START Input Form-02-Current Form**
+
+- The current form is blank when we Generate the Input Form. We should have the White Boxes auto-fill and our team fills our anything in the Salmon-Colored boxes. What is causing the form to generate as blank values?
 
 ![START Process-Generate START Input Form-02-Current Form](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-02-Current%20Form.png)
 
-START Process-Generate START Input Form-03-File Location
+**START Process-Generate START Input Form-03-File Location**
+
+- The excel will print to a file location. This example, we saved to the project folder and you can see the 5 excels saved in the Documents section. 
 
 ![START Process-Generate START Input Form-03-File Location](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-03-File%20Location.png)
 
-START Process-Generate START Input Form-04-File Structure
+**START Process-Generate START Input Form-04-File Structure**
+
+- There is a Contract Input Folder. We would use this folder in production for any and all excels saved for the START process. 
 
 ![START Process-Generate START Input Form-04-File Structure](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-04-File%20Structure.png)
 
-START Process-Generate START Input Form-05-Successful Run
+**START Process-Generate START Input Form-05-Successful Run**
+
+- The example here is a test we did in February. All White sections were auto-filled by our budgets and the Salmon sections were hand entries during the START Input Form process. What made this test successful? Do we have a log of the action(s)?
 
 ![START Process-Generate START Input Form-05-Successful Run](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-05-Successful%20Run.png)
 
-START Process-Generate START Input Form-06-EoS FND Contract Input History
+**START Process-Generate START Input Form-06-EoS FND Contract Input History**
+
+- The EoS FND Contract Input History shows the items we send to the Staging Tables. 
 
 ![START Process-Generate START Input Form-06-EoS FND Contract Input History](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Generate%20START%20Input%20Form-06-EoS%20FND%20Contract%20Input%20History.png)
 
-Staging Tables-Job Cost Data
+**Staging Tables-Job Cost Data**
+
+- Here is what we have successfully staged in our Navigator Job Cost Data table. Although it was successful to this location, we cannot test the connection to eCMS with our production companies (Company 8 or 11). We need to have the information stage under Company _98 - Test Company_. 
 
 ![Staging Tables-Job Cost Data](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.17-Staging%20Tables-Job%20Cost%20Data.png)
 
-START Process-Log Contract Input-01-EoS Location by Estimate File
+**START Process-Log Contract Input-01-EoS Location by Estimate File**
 
 ![START Process-Log Contract Input-01-EoS Location by Estimate File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Log%20Contract%20Input-01-EoS%20Location%20by%20Estimate%20File.png)
 
-START Process-Project Information-Publish Job Specs-01-EoS Location by Project Information
+**START Process-Project Information-Publish Job Specs-01-EoS Location by Project Information**
 
 ![START Process-Project Information-Publish Job Specs-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20Job%20Specs-01-EoS%20Location%20by%20Project%20Information.png)
 
-START Process-Project Information-Publish Lega Info-01-EoS Location by Project Information
+**START Process-Project Information-Publish Lega Info-01-EoS Location by Project Information**
 
 ![START Process-Project Information-Publish Lega Info-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20Lega%20Info-01-EoS%20Location%20by%20Project%20Information.png)
 
-START Process-Project Information-Publish START Input-01-EoS Location by Project Information
+**START Process-Project Information-Publish START Input-01-EoS Location by Project Information**
 
 ![START Process-Project Information-Publish START Input-01-EoS Location by Project Information](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-01-EoS%20Location%20by%20Project%20Information.png)
 
-START Process-Project Information-Publish START Input-02-Pop-Up Source File
+**START Process-Project Information-Publish START Input-02-Pop-Up Source File**
 
 ![START Process-Project Information-Publish START Input-02-Pop-Up Source File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-02-Pop-Up%20Source%20File.png)
 
-START Process-Project Information-Publish START Input-03-Pop-Up File Explorer
+**START Process-Project Information-Publish START Input-03-Pop-Up File Explorer**
 
 ![START Process-Project Information-Publish START Input-03-Pop-Up File Explorer](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Project%20Information-Publish%20START%20Input-03-Pop-Up%20File%20Explorer.png)
 
-START Process-Publish START Input-01-EoS Location by Estimate File
+**START Process-Publish START Input-01-EoS Location by Estimate File**
 
 ![START Process-Publish START Input-01-EoS Location by Estimate File](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/01-START%20Process/START%20Process-Publish%20START%20Input-01-EoS%20Location%20by%20Estimate%20File.png)
 
