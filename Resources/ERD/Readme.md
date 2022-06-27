@@ -712,6 +712,11 @@ JC_Mst_50_A/N_List_Col_5
 JC_Mst_Last_Updated_by_User
 JC_Mst_Last_Date/Time_Updated
 
+Project_Analysis
+---
+Cost_Distribution
+Cost_Type
+
 Distribution_Details
 ---
 Distribution_Employee_Class
