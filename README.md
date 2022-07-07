@@ -149,6 +149,19 @@ Grand Project to encompass and map all steps within CVC's construction process
 
 ![TrueSight Query](https://github.com/ScottyMacCVC/EoStoECMS/blob/main/Images/22.06.18-TrueSight%20Query.png)
 
+### Issues with the current EoS START and Contract Input Form
+In regards to the Contract Input Form:
+ 
+- Everything appearing three times. Most likely a bug in the code for looping through each plan elevation. One way to test this would be to try and generate a contract input form for an item that has 4 or more elevation options and see if it populates it that many times.
+ 
+In regards to the Starts Input Form:
+ 
+- I think in general this might be an indexing error. For the contract amount, its either pulling the 27 value that we saw from either the concrete CY (column N) or the Pumping CY (column R) instead of the Contract Amount? (column AB).For me, it seems like: 
+    - They are either storing the data in the wrong location.
+    - The data is stored in the correct location, but they are pulling from the wrong location
+    - Or both. 
+
+
 
 
 ### KnowledgeBase - Create Library
