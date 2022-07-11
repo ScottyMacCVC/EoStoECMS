@@ -5,5 +5,7 @@ We are going to attempt to rebuild the same thing with html code. The ideal is t
 Examples: 
 
 -https://public.tableau.com/app/profile/scott.macfarlane2218/viz/TodaysOrder/Map 
+
 -https://public.tableau.com/app/profile/scott.macfarlane2218/viz/PLP-MasterMap/Dashboard1
+
 -https://public.tableau.com/app/profile/scott.macfarlane2218/viz/Step1-TheStandard-Mapped/MappedStep1
