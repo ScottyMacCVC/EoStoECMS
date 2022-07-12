@@ -45,7 +45,7 @@ L.control.layers(baseMaps, overlays).addTo(map);
 
 
 // Read in the data from our CSV file using d3.
-d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/Addresses%20List-Transform.csv').then(function(data) {
+d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv').then(function(data) {
   console.log(data);
   // Loop through each row in the CSV file and create an object.
 
