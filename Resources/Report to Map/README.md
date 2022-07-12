@@ -9,3 +9,11 @@ Examples:
 -https://public.tableau.com/app/profile/scott.macfarlane2218/viz/PLP-MasterMap/Dashboard1
 
 -https://public.tableau.com/app/profile/scott.macfarlane2218/viz/Step1-TheStandard-Mapped/MappedStep1
+
+TODO:
+
+- Create seperate classes.
+    - Create a class for the map.
+        - Theme is a variable in constructor.
+    - Create a class for the report.
+

@@ -43,15 +43,29 @@ let overlays = {
 
 L.control.layers(baseMaps, overlays).addTo(map);
 
+///////////////////////////////////////////////////////////////////////////////
+// Task: Working with our csv file.                                          //                  
+//                                                                           //
+// Logic: While we are working with the csv file, we need to parse it.       //
+//      We need to create a function that will parse the csv file.           //
+//      We need to create a function that will create a marker for each job. //
+//      We will be setting the pop-up for each datapoint.                    //
+//      Create a class to be easily updated?                                 //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
 
 // Read in the data from our CSV file using d3.
 d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv').then(function(data) {
-  console.log(data);
-  // Loop through each row in the CSV file and create an object.
-
+  
+  // Debug Purpose: console.log the data.
+  //console.log(data[0]);
+  
+  // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
   {
+    // Create a new marker for each entry.
     L.circleMarker([entry.Latitude, entry.Longitude])
+      // Adding all our options 
       .addTo(jobLocations)
       .bindPopup("Job Name: " + entry["Job Name"] + "<br>Job Number: " + entry["Job Number"]);
       //+ "<br>Address: " + entry['Address']);
@@ -60,3 +74,6 @@ d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/
 
   data.forEach(AddMarkers);
 });
+
+
+// Read our data from the orders xls file.
