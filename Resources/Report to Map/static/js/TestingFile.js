@@ -56,8 +56,16 @@ L.control.layers(baseMaps, overlays).addTo(map);
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
+
+// An object to save the markers.
+var markers = {};
+var orderMarkers = {};
+
 // Read in the data from our CSV file using d3.
 Promise.all([
+
+  // TODO: Figure our how to get data from local files.
+
   // Local Files
   // d3.csv("../data/mapping.csv"),
   // d3.csv("../data/orders.csv")
@@ -65,35 +73,54 @@ Promise.all([
   d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv'),
   d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/orders.csv')
   // Network Files
-  // d3.csv(""),
+  // d3.csv("file:///Z:/8-THE STANDARD/12-EoS to eCMS/Resources/Report to Map/Addresses List-Transform.csv"),
   // d3.csv("")
 
 ]).then(function(files) {
   
   // Debug Purpose: console.log the files.
-  console.log(files[0]);
-  console.log(files[1]);
-
-  // A Function to go through the orders and sort them by Job Number.
-  
-
-  // An object to save the markers.
-  var markers = {};
+  // console.log(files[0]);
+  // console.log(files[1]);
 
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
   {
     // Create a new marker for each entry.
-    markers[entry['Job Name']] = L.circleMarker([entry.Latitude, entry.Longitude])
+    markers[entry['Job Number']] = L.circleMarker([entry.Latitude, entry.Longitude])
       // Adding all our options 
       .addTo(jobLocations)
-      .bindPopup("Job Name: " + entry["Job Name"] + "<br>Job Number: " + entry["Job Number"]);
+      .bindPopup("Job Name: " + entry["Job Name"] + "<br>Job Number: " + entry["Job Number"] + '<br><br>RECENT ORDERS<br>');
       //+ "<br>Address: " + entry['Address']);
 
   };
 
+  // A Function to go through the orders and sort them by Job Number.
+  var ExtractOrders = function(entry) {
+    // DEBUG AREA
+    console.log(entry['Job Number(QProduct)']);
+
+    // Check if the variable is undefined
+    try {
+      if ( entry['Job Number(QProduct)'] !== 'SRVCE' ) {
+        // Get the content of the marker popup.
+        content = markers[entry['Job Number(QProduct)']].getPopup().getContent();
+        //console.log(content);
+        orderMarkers[entry['Job Number(QProduct)']] = markers[entry['Job Number(QProduct)']];
+
+        
+        orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(
+          content + "<br>Invoice Number: " + entry['Invoice Number'] + "<br>Order Number: " + entry['Order Number']);
+        orderMarkers[entry['Job Number(QProduct)']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
+        }
+      } catch (e) {
+        console.log(e);
+      }
+  };
+
+  console.log(markers)
   
   files[0].forEach(AddMarkers);
+  files[1].forEach(ExtractOrders);
 
   // // We are experimenting with the sidebar.
   // // Finding out what needs to stay and go from the code.
