@@ -36,10 +36,12 @@ let baseMaps = {
 // Create a layer for our job location data.
 let jobLocations = new L.LayerGroup();
 let orders = new L.LayerGroup();
+let concreteOrders = new L.LayerGroup();
 
 let overlays = {
   "Job Locations": jobLocations,
-  'Recent Orders': orders
+  'Recent Orders': orders,
+  "Concrete Orders": concreteOrders
 };
 
 
@@ -58,8 +60,10 @@ L.control.layers(baseMaps, overlays).addTo(map);
 
 
 // An object to save the markers.
+var JCLocations = {};
 var markers = {};
 var orderMarkers = {};
+var concreteMarkers = {};
 
 // Read in the data from our CSV file using d3.
 Promise.all([
@@ -72,7 +76,8 @@ Promise.all([
   // Github Files
   d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv'),
   d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/orders.csv'),
-  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/7-23%20CONCRETE%20SCHED.csv')
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/7-23%20CONCRETE%20SCHED.csv'),
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/ConcreteOrders.csv')
   // Network Files
   // d3.csv("file:///Z:/8-THE STANDARD/12-EoS to eCMS/Resources/Report to Map/Addresses List-Transform.csv"),
   // d3.csv("")
@@ -87,6 +92,7 @@ Promise.all([
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
   {
+    JCLocations[entry['Job Number']] = [entry['Latitude'], entry['Longitude']];
     // Create a new marker for each entry.
     markers[entry['Job Number']] = L.circleMarker([entry.Latitude, entry.Longitude])
       // Adding all our options 
@@ -107,12 +113,15 @@ Promise.all([
         // Get the content of the marker popup.
         content = markers[entry['Job Number(QProduct)']].getPopup().getContent();
         //console.log(content);
-        orderMarkers[entry['Job Number(QProduct)']] = markers[entry['Job Number(QProduct)']];
+        orderMarkers[entry['Job Number(QProduct)']] = L.circleMarker(JCLocations[entry['Job Number(QProduct)']])
+          .addTo(orders)
+          .bindPopup(content + "Part: " + entry['Part Description'] + "        Quantity: " + entry['Quantity Shipped'] + "<br>")
+          .setStyle({color: 'orange', fillColor: 'orange'});
 
         
-        orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(
-          content + "<br>Part: " + entry['Part Description'] + "Quantity: " + entry['Quantity Shipped'] + "<br>");
-        orderMarkers[entry['Job Number(QProduct)']].setStyle({color: 'orange', fillColor: 'orange'}).addTo(orders).removeFrom(jobLocations);
+        // orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(
+        //   content + "Part: " + entry['Part Description'] + "        Quantity: " + entry['Quantity Shipped'] + "<br>");
+        // orderMarkers[entry['Job Number(QProduct)']].setStyle({color: 'orange', fillColor: 'orange'}).addTo(orders).removeFrom(jobLocations);
         }
       } catch (e) {
         // console.log(e);
@@ -122,7 +131,7 @@ Promise.all([
   // A Function to go through the orders and sort them by Job Number.
   var ExtractOrders2 = function(entry) {
     // DEBUG AREA
-    console.log(entry['JOB CODE']);
+    //console.log(entry['JOB CODE']);
 
     // Check if the variable is undefined
     try {
@@ -130,23 +139,51 @@ Promise.all([
         // Get the content of the marker popup.
         content = markers[entry['JOB CODE']].getPopup().getContent();
         //console.log(content);
-        orderMarkers[entry['JOB CODE']] = markers[entry['JOB CODE']];
-
+        orderMarkers[entry['JOB CODE']] = L.circleMarker(JCLocations[entry['JOB CODE']])
+          .addTo(concreteOrders)
+          .bindPopup(content + "Total Yards: " + entry['YARDS ORDERED'] + "    Supplier: " + entry['CONCRETE CO'] + "<br>")
+          .setStyle({color: 'red', fillColor: 'red'});
         
-        orderMarkers[entry['JOB CODE']].getPopup().setContent(
-          content + "<br>Pump #: " + entry['Pump #'] + "Yards Ordered: " + entry['YARDS ORDERED'] + "<br>");
-        orderMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
+        // orderMarkers[entry['JOB CODE']].getPopup().setContent(
+        //   content + "Pump #: " + entry['Pump #'] + "    Yards Ordered: " + entry['YARDS ORDERED'] + "<br>");
+        // orderMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
         }
       } catch (e) {
         // console.log(e);
       }
   };
 
+    // A Function to go through the orders and sort them by Job Number.
+    var ExtractOrders3 = function(entry) {
+      // DEBUG AREA
+      console.log(entry['Job code']);
+  
+      // Check if the variable is undefined
+      try {
+        if ( entry['Job code'] !== 'SRVICE' ) {
+          // Get the content of the marker popup.
+          content = markers[entry['Job code']].getPopup().getContent();
+          //console.log(content);
+          concreteMarkers[entry['Job code']] = L.circleMarker(JCLocations[entry['Job code']])
+          .addTo(concreteOrders)
+          .bindPopup(content + "<br>Total Yards: " + entry['Total Yards'] + "    Supplier: " + entry['Supplier'] + "<br>")
+          .setStyle({color: 'red', fillColor: 'red'});
+          
+          // concreteMarkers[entry['Job code']].getPopup().setContent(
+          //   content + "<br>Total Yards: " + entry['Total Yards'] + "    Supplier: " + entry['Supplier'] + "<br>");
+          //   concreteMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(concreteOrders).removeFrom(jobLocations);
+          }
+        } catch (e) {
+          // console.log(e);
+        }
+    };
+
   console.log(markers)
   
   files[0].forEach(AddMarkers);
   files[1].forEach(ExtractOrders);
   files[2].forEach(ExtractOrders2);
+  files[3].forEach(ExtractOrders3);
 
   // // We are experimenting with the sidebar.
   // // Finding out what needs to stay and go from the code.
