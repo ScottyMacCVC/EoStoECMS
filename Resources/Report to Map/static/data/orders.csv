@@ -1,0 +1,138 @@
+v_Responsible Person,v_Job Type Description,v_Job City,Job Number(QProduct),Sub,Invoice Number,Order Number,Part Number,Part Description,Quantity Shipped,Warehouse,Invoice Date
+JAMES RALPH VAHLE        ,Billable Tear Out        ,WASHOE COUNTY     ,KDBS00,01R,74505,42951,TL1046         ,"BROOM,STREET                  ",1,,44753
+JAMES RALPH VAHLE        ,Billable Tear Out        ,WASHOE COUNTY     ,KDBS00,01R,74505,42951,TL1272         ,"SHOVEL,(SQ/.FLAT)             ",3,,44753
+JOAQUIN GONZALEZ-CRUZ    ,Conventional 2 Pour      ,CARSON CITY       ,KDVKR0,02 ,74522,42963,HD0527         ,"BOLT,ANCHOR 5/8"" X 12""        ",-50,,44753
+JOAQUIN GONZALEZ-CRUZ    ,Conventional 2 Pour      ,CARSON CITY       ,KDVKR0,02 ,74522,42963,HD0561A        ,"ANCHOR MATE 5/8""USED          ",-350,,44753
+JOAQUIN GONZALEZ-CRUZ    ,Conventional 2 Pour      ,CARSON CITY       ,KDVKR0,02 ,74522,42963,HD0700A        ,SIMPSON - MASA STRAP          ,-100,,44753
+JOAQUIN GONZALEZ-CRUZ    ,Conventional 2 Pour      ,CARSON CITY       ,KDVKR0,02 ,74522,42963,HD0712         ,SIMPSON-STAB 28*LONG          ,-1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,CARSON CITY       ,KDVKR0,03 ,74506,42955,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,CARSON CITY       ,KDVKR0,03 ,74506,42955,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,MINDEN            ,SYMVV0,02 ,74509,42948,CH0247         ,"GROUT, GENERAL CONST. (50 LBS)",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74488,42938,AP0066         ,"PAINT,(ORANGE) UPSIDEDOWN     ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74488,42938,AP0068         ,"PAINT,(GREEN) UPSIDEDOWN      ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74488,42938,CH0242         ,"CHALK, FIELD MARKING (WHITE)  ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",4,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0828         ,"LUMBER,2X10X16(USED)          ",36,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0831         ,"LUMBER, 2X10X16(NEW)          ",20,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0857         ,WOOD STAKE 2 X 3 X 48 (USED)  ,210,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0877         ,WOODSTAKE 2X3X36(USED)        ,420,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0885         ,"LUMBER,*LSL2X10X16(USED)      ",30,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DRSD40,04 ,74489,42957,LB0892         ,WOOD STAKE 1X3X36(USED)       ,24,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DWSBR0,07 ,74483,42924,HD0613         ,"PT, ANCHOR                    ",300,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DWSBR0,07 ,74483,42924,HD0616         ,"PT, CABLE-1/2""                ",6200,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DWSBR0,07 ,74484,42940,TRM460         ,"POLY, TAPE 4"" X 60YD WHITE    ",4,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,DWSBR0,07 ,74485,42945,HD0616         ,"PT, CABLE-1/2""                ",6200,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,AP0003A        ,"BAG, TRASH 42-GL BLK 3MIL*32RL",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,AP0066         ,"PAINT,(ORANGE) UPSIDEDOWN     ",4,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,AP0068         ,"PAINT,(GREEN) UPSIDEDOWN      ",4,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,BL0154         ,"BLADE,CUTOFF14X3/32''X1''     ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,HD0610         ,"PT, POCKET 1-1/2""             ",250,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,HD0613         ,"PT, ANCHOR                    ",600,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,HD0616         ,"PT, CABLE-1/2""                ",6200,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74503,42925,RB0916         ,TIE WIRE (20 PER BX)          ,20,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74504,42944,HD0613         ,"PT, ANCHOR                    ",300,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,NNMV40,01 ,74504,42944,HD0616         ,"PT, CABLE-1/2""                ",6200,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,SRVE00,15 ,74507,42932,AP0003A        ,"BAG, TRASH 42-GL BLK 3MIL*32RL",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,SRVE00,15 ,74507,42932,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,AP0067         ,PAINT(WHITE)UPSIDEDOWN        ,4,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,AP0090         ,"FLOAT,RUBBER                  ",6,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,BL0169T        ,"DIAMOND 7"" TURBO SILVER 5/8 A ",5,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,CH0215         ,"MORTAR, MIX                   ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,CH0251         ,"PATCHCRETE, MIX               ",3,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,HD0578         ,"NAIL, 16 VINYL SINKERS        ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74491,42936,TL1156         ,"HOSE,GARDEN 5/8X75'           ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,AP0073         ,"POLY,10 MIL-20'X100'          ",-2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,HD0561A        ,"ANCHOR MATE 5/8""USED          ",-180,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,HD0611         ,"CHAIR,5"" SAND (SOLD BY BOX)   ",-2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,WSWHRT12T      ,SIMPSON-WSWH-RT 12 TEMP NEW   ,-2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,WSWHRT12TU     ,SIMPSON-WSWH-RT 12 TEMP USED  ,-8,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBCF00,32 ,74520,42964,WSWHRT18TU     ,SIMPSON-WSWH-RT 18 TEMP USED  ,-5,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74496,42927,LB0809         ,"LUMBER,2X4X16(NEW)            ",5,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74496,42927,LB0840         ,"LUMBER,2X6X16(NEW)            ",5,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74497,42934,AP0003A        ,"BAG, TRASH 42-GL BLK 3MIL*32RL",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74497,42934,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74497,42934,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,93 ,74497,42934,RB0916         ,TIE WIRE (20 PER BX)          ,20,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,94 ,74498,42935,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",2,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,94 ,74498,42935,TL1272         ,"SHOVEL,(SQ/.FLAT)             ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,94 ,74521,42966,AP0073         ,"POLY,10 MIL-20'X100'          ",-1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,94 ,74521,42966,RF4M18X18-8    ,"MAT, 18X18  #4 OC8            ",-5,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,RENO              ,TBRGCR,95 ,74499,42937,CH0242         ,"CHALK, FIELD MARKING (WHITE)  ",1,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,SPARKS            ,JSKSA0,03 ,74523,42965,RB0919         ,REBAR # 4 60 GRD (PER PC.)    ,-10,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,SPARKS            ,JSKSA0,04 ,74511,42921,HD0700A        ,SIMPSON - MASA STRAP          ,200,,44753
+JOAQUIN GONZALEZ-CRUZ    ,WIP                      ,SPARKS            ,JSKSA0,04 ,74511,42921,LB0866         ,"LUMBER,GREENPLATE 2X4X12 NEW) ",4,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,CARSON CITY       ,BCLL00,04P,74508,42923,BL0166P        ,"DIAMOND 14"" PAVER BLADE       ",2,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,CARSON CITY       ,BCLL00,04P,74508,42923,CH0200         ,"FUEL, PRE-MIXED 32OZ.         ",6,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,CARSON CITY       ,BCLL00,04P,74517,42958,CN0022         ,"PAVER,- INVENTORY             ",951,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,CARSON CITY       ,BCLL00,04P,74518,42959,CN0022         ,"PAVER,- INVENTORY             ",990,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,CARSON CITY       ,BCLL00,04P,74519,42960,CN0022         ,"PAVER,- INVENTORY             ",900,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,DWFR00,31P,74482,42922,CH0217         ,"CONCRETE, MIX                 ",9,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,DWFR00,31P,74482,42922,CH0666         ,SILICA SAND 30G MESH          ,12,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,NNMV30,12P,74502,42942,CH0200         ,"FUEL, PRE-MIXED 32OZ.         ",6,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,NNMV30,12P,74502,42942,CH0217         ,"CONCRETE, MIX                 ",8,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,NNMV30,12P,74502,42942,CH0666         ,SILICA SAND 30G MESH          ,12,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,NNMV30,12P,74502,42942,CH0991         ,"ADHESIVE,SIKA PRO 10 OZ       ",24,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,TBRGCR,59F,74515,42961,CN0022         ,"PAVER,- INVENTORY             ",972,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,TBRGCR,61P,74516,42962,CN0022         ,"PAVER,- INVENTORY             ",1482,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,TBRGCR,63P,74495,42949,CH0217         ,"CONCRETE, MIX                 ",8,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,TBRGCR,63P,74495,42949,CH0666         ,SILICA SAND 30G MESH          ,7,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,RENO              ,TBRGCR,63P,74495,42949,TL1272         ,"SHOVEL,(SQ/.FLAT)             ",2,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,SPARKS            ,TBSR35,05P,74500,42931,CH0200         ,"FUEL, PRE-MIXED 32OZ.         ",6,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,SPARKS            ,TBSR35,05P,74500,42931,CH0217         ,"CONCRETE, MIX                 ",10,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,SPARKS            ,TBSR35,05P,74500,42931,CH0666         ,SILICA SAND 30G MESH          ,8,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,SPARKS            ,TBSR35,06P,74501,42943,CH0217         ,"CONCRETE, MIX                 ",16,,44753
+JUAN DIEGO TORRES        ,WIP-PAVERS               ,SPARKS            ,TBSR35,06P,74501,42943,CH0666         ,SILICA SAND 30G MESH          ,13,,44753
+RAMON RIVERA             ,WIP FLATWORK             ,SUN VALLEY        ,DRLR20,04F,74486,42929,HD0640         ,"SEWER,CAST IRON BX(G5C10)     ",2,,44753
+RAMON RIVERA             ,WIP FLATWORK             ,SUN VALLEY        ,DRLR20,04F,74486,42929,LB0840         ,"LUMBER,2X6X16(NEW)            ",14,,44753
+RAMON RIVERA             ,WIP FLATWORK             ,SUN VALLEY        ,DRLR20,04F,74486,42929,LB0841         ,LUMBER 2X6X16 USED            ,6,,44753
+RAMON RIVERA             ,WIP FLATWORK             ,SUN VALLEY        ,DRLR20,04F,74486,42929,LB0858         ,LUMBER2X8X16(USED)            ,2,,44753
+RAMON RIVERA             ,WIP FLATWORK             ,SUN VALLEY        ,DRLR20,04F,74486,42929,LB0892         ,WOOD STAKE 1X3X36(USED)       ,6,,44753
+WESLEY HF WILSON         ,Multi                    ,SPARKS            ,JSKSA0,02 ,74510,42930,HD0612         ,"PT, 1/2 WEDGE (PAIR)          ",1350,,44753
+WESLEY HF WILSON         ,WIP                      ,FALLON            ,DRLT00,12 ,74487,42950,AP0067         ,PAINT(WHITE)UPSIDEDOWN        ,3,,44753
+WESLEY HF WILSON         ,WIP                      ,FALLON            ,DRLT00,12 ,74487,42950,CH0215         ,"MORTAR, MIX                   ",2,,44753
+WESLEY HF WILSON         ,WIP                      ,FALLON            ,DRLT00,12 ,74487,42950,CH0251         ,"PATCHCRETE, MIX               ",3,,44753
+WESLEY HF WILSON         ,WIP                      ,FALLON            ,DRLT00,12 ,74487,42950,TL1156         ,"HOSE,GARDEN 5/8X75'           ",1,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74512,42920,HD0700A        ,SIMPSON - MASA STRAP          ,300,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74512,42920,LB0866         ,"LUMBER,GREENPLATE 2X4X12 NEW) ",4,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74512,42920,RB0916         ,TIE WIRE (20 PER BX)          ,8,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74513,42933,AP0114         ,"STRINGLINE,#18 1LB.TWSTD      ",2,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74513,42933,HD0590         ,"NAIL, 16D (DUPLEX)            ",1,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,JSKSA0,05 ,74514,42952,SF0911         ,SAFETY - SHADE TENTS 10X10    ,1,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBACC0,05 ,74490,42956,AP0120         ,"TAPE,RED VINYL 2"" X60 YD      ",5,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBCR00,07 ,74492,42953,AP0106C        ,"FOAM, 4 'X8' 2.1"" THICK       ",6,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBCR00,07 ,74492,42953,AP0129         ,"STAPLES, A-11                 ",1,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBCR00,07 ,74492,42953,HD0631P        ,"CHAIR, 6"" SAND PARAGON 120 BX ",10,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBCR00,07 ,74492,42953,RB0916         ,TIE WIRE (20 PER BX)          ,10,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBCR00,07 ,74492,42953,TRM15          ,"POLY, TRM 15MIL YELLOW 14X140 ",2,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBMD00,31 ,74493,42926,HD0613         ,"PT, ANCHOR                    ",100,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBMD00,31 ,74493,42926,HD0616         ,"PT, CABLE-1/2""                ",6200,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBMD00,31 ,74494,42954,AP0066         ,"PAINT,(ORANGE) UPSIDEDOWN     ",1,,44753
+WESLEY HF WILSON         ,WIP                      ,SPARKS            ,TBMD00,31 ,74494,42954,HD0589         ,"NAIL,8D(DUPLEX)               ",1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,CH0217         ,"CONCRETE, MIX                 ",2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,CH0239A        ,"ARDEX, K13 50LB               ",4,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,HD0635         ,"SCEW, HD TITTEN 5/8 X 8       ",60,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,HD0648         ,SIMPSON-ABU 44                ,4,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,SR0938Z        ,A-T 5/8 X 24 *F1554Z          ,2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,SR0942         ,A-T 1 X 36 *F1554             ,2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74478,42939,SR1010B        ,"WASHER,SQ.3X3,5/8""HL          ",50,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,AP0090         ,"FLOAT,RUBBER                  ",1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,CH0235         ,"PATCHCRETE, GLUE              ",1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,CH0239A        ,"ARDEX, K13 50LB               ",6,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,CH0251         ,"PATCHCRETE, MIX               ",1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,HD0635         ,"SCEW, HD TITTEN 5/8 X 8       ",60,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,SR1010B        ,"WASHER,SQ.3X3,5/8""HL          ",50,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74479,42941,SR1015         ,4'' PAINT DOUBLE BRUSH        ,2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,CH0200         ,"FUEL, PRE-MIXED 32OZ.         ",6,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,CH0206B        ,"EPOXY, SET22 XP SIMPSON       ",3,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,CH0239A        ,"ARDEX, K13 50LB               ",2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,HD0635         ,"SCEW, HD TITTEN 5/8 X 8       ",60,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,SF0213         ,SAFETY-CABLE LOCK 20' STANLEY ,1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74480,42946,SR1010A        ,"WASHER,SQ.3X3,5/8""SLOT HL     ",50,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74481,42947,CH0217         ,"CONCRETE, MIX                 ",3,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74481,42947,CH0238         ,"ARDEX, CD FINE GREY (20 LBS)  ",1,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74481,42947,CH0239A        ,"ARDEX, K13 50LB               ",2,,44753
+,Conversion               ,RENO              ,SRVICE,06 ,74481,42947,CH0251         ,"PATCHCRETE, MIX               ",1,,44753
+,,,,,,,,,,,
