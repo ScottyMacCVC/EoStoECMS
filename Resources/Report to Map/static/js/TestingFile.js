@@ -92,12 +92,12 @@ Promise.all([
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
   {
-    JCLocations[entry['Job Number']] = [entry['Latitude'], entry['Longitude']];
+    JCLocations[entry['Job Code']] = [entry['Latitude'], entry['Longitude']];
     // Create a new marker for each entry.
-    markers[entry['Job Number']] = L.circleMarker([entry.Latitude, entry.Longitude])
+    markers[entry['Job Code']] = L.circleMarker([entry.Latitude, entry.Longitude])
       // Adding all our options 
       .addTo(jobLocations)
-      .bindPopup("Job Name: " + entry["Job Name"] + "<br>Job Number: " + entry["Job Number"] + '<br><br>RECENT ORDERS<br>');
+      .bindPopup("Job Name: " + entry["Job Name"] + "<br>Job Number: " + entry['Job Code'] + '<br><br>RECENT ORDERS<br>');
       //+ "<br>Address: " + entry['Address']);
 
   };
