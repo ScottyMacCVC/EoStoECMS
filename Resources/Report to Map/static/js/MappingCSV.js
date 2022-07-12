@@ -35,9 +35,11 @@ let baseMaps = {
 
 // Create a layer for our job location data.
 let jobLocations = new L.LayerGroup();
+let orders = new L.LayerGroup();
 
 let overlays = {
   "Job Locations": jobLocations,
+  'Recent Orders': orders
 };
 
 
@@ -55,10 +57,18 @@ L.control.layers(baseMaps, overlays).addTo(map);
 ///////////////////////////////////////////////////////////////////////////////
 
 // Read in the data from our CSV file using d3.
-d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv').then(function(data) {
+Promise.all([
+  // Local Files
+  // d3.csv("../data/mapping.csv"),
+  // d3.csv("../data/orders.csv")
+  // Github Files
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv'),
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/orders.csv')
+]).then(function(files) {
   
-  // Debug Purpose: console.log the data.
-  //console.log(data[0]);
+  // Debug Purpose: console.log the files.
+  console.log(files[0]);
+  console.log(files[1]);
   
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
@@ -72,7 +82,42 @@ d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/
 
   };
 
-  data.forEach(AddMarkers);
+  
+  files[0].forEach(AddMarkers);
+
+  // // We are experimenting with the sidebar.
+  // // Finding out what needs to stay and go from the code.
+  // function createMarker(coords, title, info, source) {
+  //   var marker, content;
+  
+  //   content = '<b><font size="6">' + title + '</font></b><br/>' + info + '<br><a href="' + source + '" target="_blank"><button>Orders</button></a>'
+  //   marker = L.marker(coords).addTo(markerLayer);
+  //   marker.bindPopup(content);
+    
+  //   marker.on('click', function(evt) {
+  //     var id = L.Util.stamp(evt.target);
+  //     if (document.getElementById(id) != null) return; 
+  //     var sidebarElement, infoPart, removePart;
+  //     sidebarElement = L.DomUtil.create('div', 'sidebarElement', document.getElementById('sidebar'));
+  //     sidebarElement.id = id;
+  //     infoPart = L.DomUtil.create('div', 'infoSidebarElement', sidebarElement);
+  //     infoPart.innerHTML = content;
+  //     L.DomEvent.on(infoPart, 'click', function(evt) {
+  //       var marker = markerLayer.getLayer(this.id);
+  //       marker.closePopup();
+  //       map.panTo(marker.getLatLng());
+  //       marker.bounce(3);
+  //     }, sidebarElement);
+  //     removePart = L.DomUtil.create('div', 'removeSidebarElement', sidebarElement);
+  //     removePart.innerHTML = 'Remove';
+  //     L.DomEvent.on(removePart, 'click', function(evt) {
+  //       markerLayer.getLayer(this.id).closePopup();
+  //       this.parentNode.removeChild(this);
+  //     }, sidebarElement);
+  //   });
+  // }
+
+
 });
 
 

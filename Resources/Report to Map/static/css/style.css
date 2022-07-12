@@ -1,5 +1,32 @@
 html,
 body,
+
+/* Sidebar */
+/* #sidebar {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(46, 42, 42, 0.8);
+}
+.sidebarElement {
+  padding: 6px;
+  display: table;
+  width: 95%;
+}
+.infoSidebarElement {
+  display: table-cell;
+  cursor: pointer;
+  width: 90%;
+}
+.removeSidebarElement {
+  display: table-cell;
+  text-align: right;
+  cursor: pointer;
+} */
+
+/* Map */
 #mapid {
   width: 100%;
   height: 100%;
@@ -21,13 +48,4 @@ body,
   height: 18px;
   margin-right: 8px;
   opacity: 0.7;
-}
-
-/* Custom Stile for the popup
-<style>
-/* css to customize Leaflet default styles  */
-.popupCustom .leaflet-popup-tip,
-.popupCustom .leaflet-popup-content-wrapper {
-    background: #e0e0e0;
-    color: #234c5e;
 }
