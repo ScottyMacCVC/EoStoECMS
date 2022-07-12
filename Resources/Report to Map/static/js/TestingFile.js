@@ -87,7 +87,7 @@ Promise.all([
   // Debug Purpose: console.log the files.
   // console.log(files[0]);
   // console.log(files[1]);
-  console.log(files[2]);
+  // console.log(files[2]);
 
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
@@ -149,7 +149,7 @@ Promise.all([
         // orderMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
         }
       } catch (e) {
-        // console.log(e);
+        console.log(e);
       }
   };
 
