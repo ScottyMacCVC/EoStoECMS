@@ -71,7 +71,8 @@ Promise.all([
   // d3.csv("../data/orders.csv")
   // Github Files
   d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/mapping.csv'),
-  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/orders.csv')
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/orders.csv'),
+  d3.csv('https://raw.githubusercontent.com/ScottyMacCVC/EoStoECMS/main/Resources/Report%20to%20Map/static/data/7-23%20CONCRETE%20SCHED.csv')
   // Network Files
   // d3.csv("file:///Z:/8-THE STANDARD/12-EoS to eCMS/Resources/Report to Map/Addresses List-Transform.csv"),
   // d3.csv("")
@@ -81,6 +82,7 @@ Promise.all([
   // Debug Purpose: console.log the files.
   // console.log(files[0]);
   // console.log(files[1]);
+  console.log(files[2]);
 
   // Function to loop through data and add each entry to the map.
   var AddMarkers = function(entry)
@@ -97,11 +99,11 @@ Promise.all([
   // A Function to go through the orders and sort them by Job Number.
   var ExtractOrders = function(entry) {
     // DEBUG AREA
-    console.log(entry['Job Number(QProduct)']);
+    // console.log(entry['Job Number(QProduct)']);
 
     // Check if the variable is undefined
     try {
-      if ( entry['Job Number(QProduct)'] !== 'SRVCE' ) {
+      if ( entry['Job Number(QProduct)'] !== 'SRVICE' ) {
         // Get the content of the marker popup.
         content = markers[entry['Job Number(QProduct)']].getPopup().getContent();
         //console.log(content);
@@ -109,11 +111,34 @@ Promise.all([
 
         
         orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(
-          content + "<br>Invoice Number: " + entry['Invoice Number'] + "<br>Order Number: " + entry['Order Number']);
-        orderMarkers[entry['Job Number(QProduct)']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
+          content + "<br>Part: " + entry['Part Description'] + "Quantity: " + entry['Quantity Shipped'] + "<br>");
+        orderMarkers[entry['Job Number(QProduct)']].setStyle({color: 'orange', fillColor: 'orange'}).addTo(orders).removeFrom(jobLocations);
         }
       } catch (e) {
-        console.log(e);
+        // console.log(e);
+      }
+  };
+
+  // A Function to go through the orders and sort them by Job Number.
+  var ExtractOrders2 = function(entry) {
+    // DEBUG AREA
+    console.log(entry['JOB CODE']);
+
+    // Check if the variable is undefined
+    try {
+      if ( entry['JOB CODE'] !== 'SRVICE' ) {
+        // Get the content of the marker popup.
+        content = markers[entry['JOB CODE']].getPopup().getContent();
+        //console.log(content);
+        orderMarkers[entry['JOB CODE']] = markers[entry['JOB CODE']];
+
+        
+        orderMarkers[entry['JOB CODE']].getPopup().setContent(
+          content + "<br>Pump #: " + entry['Pump #'] + "Yards Ordered: " + entry['YARDS ORDERED'] + "<br>");
+        orderMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
+        }
+      } catch (e) {
+        // console.log(e);
       }
   };
 
@@ -121,6 +146,7 @@ Promise.all([
   
   files[0].forEach(AddMarkers);
   files[1].forEach(ExtractOrders);
+  files[2].forEach(ExtractOrders2);
 
   // // We are experimenting with the sidebar.
   // // Finding out what needs to stay and go from the code.

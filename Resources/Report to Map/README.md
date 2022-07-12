@@ -17,3 +17,11 @@ TODO:
         - Theme is a variable in constructor.
     - Create a class for the report.
 
+- Set up flask server to serve the html report.
+- Use python to read html reports and convert them to a map.
+- Use python to read xls reports and convert them to a map.
+- Use python to read csv reports and convert them to a map.
+
+## Ideas
+
+Im thinking we currently use python to read all the data and send it into javascript for easier manipulation and extraction.
