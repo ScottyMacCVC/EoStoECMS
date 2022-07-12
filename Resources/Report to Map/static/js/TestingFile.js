@@ -110,13 +110,24 @@ Promise.all([
     // Check if the variable is undefined
     try {
       if ( entry['Job Number(QProduct)'] !== 'SRVICE' ) {
-        // Get the content of the marker popup.
-        content = markers[entry['Job Number(QProduct)']].getPopup().getContent();
-        //console.log(content);
-        orderMarkers[entry['Job Number(QProduct)']] = L.circleMarker(JCLocations[entry['Job Number(QProduct)']])
-          .addTo(orders)
-          .bindPopup(content + "Part: " + entry['Part Description'] + "        Quantity: " + entry['Quantity Shipped'] + "<br>")
-          .setStyle({color: 'orange', fillColor: 'orange'});
+        
+
+        // TODO: Check if entry exists, if it does update the popup
+        if (orderMarkers[entry['Job Number(QProduct)']] === undefined) {
+
+          // Get the content of the marker popup.
+          content = markers[entry['Job Number(QProduct)']].getPopup().getContent();
+
+          orderMarkers[entry['Job Number(QProduct)']] = L.circleMarker(JCLocations[entry['Job Number(QProduct)']])
+            .addTo(orders)
+            .bindPopup(content + "Part: " + entry['Part Description'] + "        Quantity: " + entry['Quantity Shipped'] + "<br>")
+            .setStyle({color: 'orange', fillColor: 'orange'});
+        }
+        else {
+          content = orderMarkers[entry['Job Number(QProduct)']].getPopup().getContent();
+          console.log(content);
+          orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(content + "Part: " + entry['Part Description'] + "        Quantity: " + entry['Quantity Shipped'] + "<br>");
+        }
 
         
         // orderMarkers[entry['Job Number(QProduct)']].getPopup().setContent(
@@ -149,14 +160,14 @@ Promise.all([
         // orderMarkers[entry['JOB CODE']].setStyle({color: 'red', fillColor: 'red'}).addTo(orders).removeFrom(jobLocations);
         }
       } catch (e) {
-        console.log(e);
+        // console.log(e);
       }
   };
 
     // A Function to go through the orders and sort them by Job Number.
     var ExtractOrders3 = function(entry) {
       // DEBUG AREA
-      console.log(entry['Job code']);
+      // console.log(entry['Job code']);
   
       // Check if the variable is undefined
       try {
